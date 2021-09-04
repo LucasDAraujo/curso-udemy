@@ -10,10 +10,29 @@
     <h1>Testando formulário no site</h1>
     <form action="" method="post">
       <label for="login">Login:</label><br />
-      <input type="text" name="nome" id="nome" /><br>
+      <input type="text" name="nome" id="nome" /><br />
       <label for="senha">Senha:</label><br />
-      <input type="password" name="senha" id="senha" /><br>
-      <button type="button">Enviar</button>
+      <input type="password" name="senha" id="senha" /><br />
+      <!-- COLOCAR O MESMO NOME NOS INPUTS DE TIPO RADIO PARA QUE APENAS UM SEJA CIRCULADO -->
+      <label for="senha">Sexo:</label><br />
+      <input type="radio" name="sexo" value="M" />Masculino<br />
+      <input type="radio" name="sexo" ivalue="F" />Feminino <br />
+      <input type="radio" name="sexo" ivalue="O" />Outro <br />
+
+      <label for="">Possui interesse em:</label> <br />
+      <input type="checkbox" name="interesses" />Futebol
+      <input type="checkbox" name="interesses" />Natação
+      <input type="checkbox" name="interesses" />Corrida
+      <input type="checkbox" name="interesses" />Outro <br />
+      <label>Estado</label>
+      <select name="estado">
+        <option value="AC">Acre</option>
+        <option value="AP">Amapá</option>
+        <option value="AL">Alagoas</option>
+      </select><br>
+      <label>Observações:</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="Cadastrar">
     </form>
   </body>
 </html>
