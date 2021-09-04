@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabela</title>
     <style>
-        table {
-            text-align: center;
-            border :1px solid #000;
-        }
-        table th, td{
-            border: 1px solid #000;
-        }
+      table {
+        text-align: center;
+        border: 1px solid #000;
+      }
+      table th,
+      td {
+        border: 1px solid #000;
+      }
+      table img {
+        display: block;
+        width: 200px;
+      }
     </style>
   </head>
   <body>
     <h1>Criando tabelas</h1>
     <h2>Tabela de produtos:</h2>
+
     <table>
       <!--LINHA DA TABELA-->
       <tr>
@@ -26,6 +32,7 @@
         <th>Preço</th>
         <th>Código</th>
       </tr>
+
       <tr>
         <td>Notebook Deu Inspirou 255</td>
         <td>R$2221.99</td>
@@ -36,6 +43,32 @@
         <td>Celular Inventei</td>
         <td>R$ 300,00</td>
         <td>2</td>
+      </tr>
+
+      <tr>
+        <!--COLUNA DA TABELA-->
+        <td>
+          <a
+            href="https://pt.wikipedia.org/wiki/Carro_Presidencial_dos_Estados_Unidos"
+            >Carro Inventei</a
+          >
+          <img src="images/carro.jpg" alt="" />
+        </td>
+        <td>R$ 3000000,00</td>
+        <td>2</td>
+      </tr>
+
+      <tr>
+        <td rowspan="3">Desconto</td>
+        <td colspan="2">Cupom de 20%</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">Cupom de 30%</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">Total:R$:XXXXXXXXXXXXX</td>
       </tr>
     </table>
   </body>
