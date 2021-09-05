@@ -133,9 +133,6 @@ table {
 /*                            RESET DO CSS NO INDEX                           */
 /* -------------------------------------------------------------------------- */
 
-
-
-
 /* -------------------------------------------------------------------------- */
 /*                            CONFIGURAÇÃO DO SITE                            */
 /* -------------------------------------------------------------------------- */
@@ -146,12 +143,38 @@ body {
 }
 .container {
     height: 100vh;
-    width: 90vw;
+    max-width: 900px;
+    min-width: 900px;
     margin: 0 auto;
     padding: 0px 20px 20px 0px;
 }
 /*GERAL*/
 
+/* CABEÇALHO */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+.menu li {
+    float: left;
+    padding-left: 1px;
+    padding-right: 5px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover {
+    text-decoration: none;
+    color: #019fd9;
+}
+.borda span {
+    padding-left: 7px;
+    border-right: 1px solid #000;
+}
+/* CABEÇALHO */
 
 /*CONTEÚDO*/
 .conteudo img {
