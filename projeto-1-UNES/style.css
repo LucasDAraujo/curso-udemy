@@ -129,6 +129,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
 /* -------------------------------------------------------------------------- */
 /*                            RESET DO CSS NO INDEX                           */
 /* -------------------------------------------------------------------------- */
@@ -202,7 +208,7 @@ textarea {
     margin-bottom: 5px;
     resize: none;
 }
-.formulario button{
+.formulario button {
     margin-top: 10px;
 }
 /*FORMULÁRIO*/
