@@ -193,8 +193,17 @@ body {
 /*CONTEÚDO*/
 
 /*FORMULÁRIO*/
-.formulario {
-    
+.formulario label,
+input,
+button,
+textarea {
+    display: block;
+    width: 20%;
+    margin-bottom: 5px;
+    resize: none;
+}
+.formulario button{
+    margin-top: 10px;
 }
 /*FORMULÁRIO*/
 
