@@ -181,7 +181,7 @@ body {
     margin-bottom: 30px;
 }
 .artigo h2 {
-    margin-bottom: 20px;
+    padding: 15px 0;
 }
 .artigo p {
     padding: 10px 0px;
