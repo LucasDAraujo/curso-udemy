@@ -2,6 +2,9 @@
 v2.0 | 20110126
 License: none (public domain)
 */
+/* -------------------------------------------------------------------------- */
+/*                            RESET DO CSS NO INDEX                           */
+/* -------------------------------------------------------------------------- */
 html,
 body,
 div,
@@ -126,3 +129,54 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/* -------------------------------------------------------------------------- */
+/*                            RESET DO CSS NO INDEX                           */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                            CONFIGURAÇÃO DO SITE                            */
+/* -------------------------------------------------------------------------- */
+
+/*GERAL*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0px 20px 20px 0px;
+}
+/*GERAL*/
+
+
+/*CONTEÚDO*/
+.conteudo img {
+    margin-bottom: 30px;
+}
+.artigo h2 {
+    margin-bottom: 20px;
+}
+.artigo p {
+    padding: 10px 0px;
+}
+.artigo h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+/*CONTEÚDO*/
+
+/*RODAPÉ*/
+.rodape {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+/*RODAPÉ*/
+
+/* -------------------------------------------------------------------------- */
+/*                            CONFIGURAÇÃO DO SITE                            */
+/* -------------------------------------------------------------------------- */
