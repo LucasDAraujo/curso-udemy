@@ -1,7 +1,10 @@
 /* -------------------------- CONFIGURAÇÕES GERAIS -------------------------- */
 :root {
-    --cabecalho: #D4D3BE;
+    --cabecalho: #d4d3be;
     --corpo: #faf7e4ff;
+    --fonte-menu: #52545e;
+    --fonte-h2: #8e8f80;
+    --conteudo-cor:#FDFBED;
 }
 
 body {
@@ -17,39 +20,69 @@ body {
     margin: 0px auto;
     text-align: left;
 }
+
+.bold{
+    font-weight: bolder;
+}
 /* -------------------------- CONFIGURAÇÕES GERAIS -------------------------- */
 
-/* -------------------------- ESTILIZAÇÃO DOS ELEMENTOS ------------------------- */
+
+/* -------------------------- ESTILIZAÇÃO DO CABEÇALHO ------------------------- */
 
 .cabecalho {
     background-color: var(--cabecalho);
     padding: 5px;
 }
-.menu{
+.cabecalho img{
+    width: 890px;
+}
+.menu {
     font-size: 20px;
     font-weight: bold;
-    padding: 10px 0 5px 0;  
-    
+    padding: 10px 0 5px 0;
 }
-.menu a{
+.menu a {
     padding: 10px;
     text-decoration: none;
-    color: #000;
-
+    color: var(--fonte-menu);
 }
-.menu a:hover{
+.menu a:hover {
     background-color: #faf7e4ff;
-    color: #5c5a5a;
+    color: #8f8f8f;
 }
-.menu ul{
-
+.menu ul {
     display: flex;
     justify-content: space-evenly;
 }
 
-.separador{
+.separador {
     height: 30px;
     border-left: 2px solid #000;
     padding-left: 4.5%;
 }
-/* -------------------------- ESTILIZAÇÃO DOS ELEMENTOS ------------------------- */
+/* -------------------------- ESTILIZAÇÃO DO CABEÇALHO ------------------------- */
+
+
+/* ------------------------- ESTILIZAÇÃO DO CONTEÚDO ------------------------ */
+.principal{
+    padding-top: 20px;
+    background-color: var(--conteudo-cor);
+}
+.principal h2{
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--fonte-h2);
+}
+.principal p{
+    padding: 10px 0px 10px 0;
+}
+/* ------------------------- ESTILIZAÇÃO DO CONTEÚDO ------------------------ */
+
+
+/* -------------------------- ESTILIZAÇÃO DO RODAPÉ ------------------------- */
+.rodape{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+/* -------------------------- ESTILIZAÇÃO DO RODAPÉ ------------------------- */
