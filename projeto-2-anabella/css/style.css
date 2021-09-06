@@ -4,7 +4,7 @@
     --corpo: #faf7e4ff;
     --fonte-menu: #52545e;
     --fonte-h2: #8e8f80;
-    --conteudo-cor:#FDFBED;
+    --conteudo-cor: #fdfbed;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     background-image: url(/images/fundo.png);
 }
 
-.container {
+#container {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 900px;
     width: 98%;
@@ -21,38 +21,23 @@ body {
     text-align: left;
 }
 
-.bold{
+.bold {
     font-weight: bolder;
 }
 /* -------------------------- CONFIGURAÇÕES GERAIS -------------------------- */
 
-
 /* -------------------------- ESTILIZAÇÃO DO CABEÇALHO ------------------------- */
 
-.cabecalho {
+#cabecalho {
     background-color: var(--cabecalho);
     padding: 5px;
 }
-.cabecalho img{
+#cabecalho img {
     width: 890px;
 }
-.menu {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 0 5px 0;
-}
-.menu a {
-    padding: 10px;
-    text-decoration: none;
-    color: var(--fonte-menu);
-}
-.menu a:hover {
-    background-color: #faf7e4ff;
-    color: #8f8f8f;
-}
-.menu ul {
-    display: flex;
-    justify-content: space-evenly;
+
+#menu {
+    
 }
 
 .separador {
@@ -62,25 +47,23 @@ body {
 }
 /* -------------------------- ESTILIZAÇÃO DO CABEÇALHO ------------------------- */
 
-
 /* ------------------------- ESTILIZAÇÃO DO CONTEÚDO ------------------------ */
-.principal{
+#principal {
     padding-top: 20px;
     background-color: var(--conteudo-cor);
 }
-.principal h2{
+#principal h2 {
     font-size: 18px;
     font-weight: bolder;
     color: var(--fonte-h2);
 }
-.principal p{
+#principal p {
     padding: 10px 0px 10px 0;
 }
 /* ------------------------- ESTILIZAÇÃO DO CONTEÚDO ------------------------ */
 
-
 /* -------------------------- ESTILIZAÇÃO DO RODAPÉ ------------------------- */
-.rodape{
+#rodape {
     display: flex;
     justify-content: center;
     padding-top: 20px;
