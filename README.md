@@ -1,2 +1,2 @@
 # curso-udemy
-Curso da Udemy que estou fazendo para a prender a ser um webdeveloper
+Curso da Udemy que estou fazendo para aprender a ser um webdeveloper, no total serão 20 projetos.
