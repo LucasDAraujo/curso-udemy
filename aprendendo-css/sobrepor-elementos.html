@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamentos(static, absolute, relative, fixed)</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #a8e6ff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            width: 1200px;
+            height: 90vh;
+            padding: 0px auto;
+            background-color: #ffc09fff;
+            margin: 0px auto;
+            position: relative;
+        }
+
+        .conteudo1 {
+            background-color: #F7AEF8;
+            color: #000;
+            width: 200px;
+            height: 220px;
+            margin: 10px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .conteudo2 {
+            background-color: #f8f3ae;
+            color: #000;
+            width: 200px;
+            height: 220px;
+            margin: 10px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 2;
+            /*Z-INDEX SERVE PARA DEFINIR A SOBREPOSIÇÃO DOS ELEMENTOS*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="conteudo1">
+            <p>
+                Elemento 2 <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+                aperiam, doloremque voluptates, odio ut vel quam inventore nihil
+                repellendus culpa dolorem distinctio officiis aliquid! Tenetur
+                repellat aspernatur porro quam tempore.
+            </p>
+        </div>
+        <div class="conteudo2">
+            <p>
+                Elemento 1 <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+                aperiam, doloremque voluptates, odio ut vel quam inventore nihil
+                repellendus culpa dolorem distinctio officiis aliquid! Tenetur
+                repellat aspernatur porro quam tempore.
+            </p>
+        </div>
+
+        <!-- <div style="clear: both;"></div> -->
+    </div>
+
+</body>
+
+</html>
