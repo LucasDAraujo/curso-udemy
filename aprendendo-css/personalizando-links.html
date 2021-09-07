@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        /* Links não visitados: */
+        body {
+            text-align: center;
+            background-color: #CCC;
+            font-family: arial;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 40px;
+            padding: 5px;
+        }
+
+        a:link {
+            color: #b9c941;
+        }
+
+        /* Links visitados: */
+        a:visited {
+            color: #313131;
+        }
+
+        /* Links com o mouse em cima: */
+        a:hover {
+            background: #6d790f;
+            transition: 0.2s;
+        }
+
+        /* Links imediatamente quando se clica neles: */
+        a:active {
+            font-size: 90px;
+            color: #e4f371;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com.br" target="_blank" rel="noopener noreferrer">Google</a>
+    <a href="http://www.tecmundo.com.br" target="_blank" rel="noopener noreferrer">Tecmundo</a>
+    <a href="http://www.megacurioso.com.br" target="_blank" rel="noopener noreferrer">Megacurioso</a>
+
+</body>
+
+</html>
