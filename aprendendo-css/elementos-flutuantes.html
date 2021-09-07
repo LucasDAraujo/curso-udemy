@@ -1,21 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementos flutuantes</title>
     <style>
-        #container{
+        #container {
+            width: 900px;
+            margin: 0px auto;
+            background-color: #CCC;
+        }
 
-        width: 900px;
+        .noticia {
+            background: rgb(212, 246, 255);
+            width: 200px;
+            float: left;
+            margin: 10px;
+        }
+        #imagens--container, .imagem{
+            margin: 10px;
+        }
+        .imagem {
+            float: left;
+        }
+
+        .clear {
+            clear: both;
         }
     </style>
 </head>
+
 <body>
     <div id="container">
-        <h1>Notícias</h1>
+        <div id="noticias--container">
+            <h1>Notícias</h1>
+            <div class="noticia">
+                <h2>Notícia</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum expedita labore dolore praesentium
+                    explicabo deserunt officiis magni nulla itaque, excepturi vel, impedit quaerat iusto eveniet
+                    assumenda
+                    enim ea, corrupti corporis.</p>
+            </div>
+            <div class="noticia">
+                <h2>Notícia</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum expedita labore dolore praesentium
+                    explicabo deserunt officiis magni nulla itaque, excepturi vel, impedit quaerat iusto eveniet
+                    assumenda
+                    enim ea, corrupti corporis.</p>
+            </div>
+            <div class="noticia">
+                <h2>Notícia</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum expedita labore dolore praesentium
+                    explicabo deserunt officiis magni nulla itaque, excepturi vel, impedit quaerat iusto eveniet
+                    assumenda
+                    enim ea, corrupti corporis.</p>
+            </div>
+            <div class="noticia">
+                <h2>Notícia</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum expedita labore dolore praesentium
+                    explicabo deserunt officiis magni nulla itaque, excepturi vel, impedit quaerat iusto eveniet
+                    assumenda
+                    enim ea, corrupti corporis.</p>
+            </div>
+        </div>
+        <hr class="clear">
+        <div id="imagens--container">
+            <div class="imagem">
+                <img src="images/imagem1.png" alt="">
+            </div>
+            <div class="imagem">
+                <img src="images/imagem2.png" alt="">
+            </div>
+            <div class="imagem">
+                <img src="images/imagem3.png" alt="">
+            </div>
+            <div class="imagem">
+                <img src="images/imagem4.png" alt="">
+            </div>
+            <div class="imagem">
+                <img src="images/imagem5.png" alt="">
+            </div>
+        </div>
+        <div class="clear"></div>
     </div>
-    
+
 </body>
+
 </html>
