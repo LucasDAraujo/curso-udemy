@@ -14,6 +14,18 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-do-fundo-1);
 }
+
+#area-de-postagens {
+    float: left;
+    margin-left: 200px;
+}
+#area-lateral {
+    float: right;
+    margin-right: 210px;
+}
+#rodape {
+    clear: both;
+}
 /* -------------------------------------------------------------------------- */
 /*                            CONFIGURAÇÕES GERAIS                            */
 /* -------------------------------------------------------------------------- */
@@ -66,7 +78,7 @@ body {
 /* -------------------------------- POSTAGENS ------------------------------- */
 #conteudo {
     background-color: #fff;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0px auto;
     align-items: center;
     padding: 20px;
@@ -85,8 +97,24 @@ body {
 }
 /* -------------------------------- POSTAGENS ------------------------------- */
 
-/* --------------------------------- RODAPÉ --------------------------------- */
+/* ------------------------------ MENU LATERAL ------------------------------ */
 
+.menu-lateral-1,
+.menu-lateral-2 {
+    width: 300px;
+
+    background-color: var(--cor-do-fundo-3);
+}
+
+/* ------------------------------ MENU LATERAL ------------------------------ */
+
+/* --------------------------------- RODAPÉ --------------------------------- */
+#rodape {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-do-fundo-3);
+}
 /* --------------------------------- RODAPÉ --------------------------------- */
 
 /* -------------------------------------------------------------------------- */
