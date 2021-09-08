@@ -4,9 +4,10 @@
 :root {
     --cor-do-fundo-1: #fcf8fc;
     --cor-do-fundo-2: #ffc300;
+    --cor-do-fundo-3: #dedade;
+
     --cor-letra-1: #39373a;
     --cor-letra-2: #fff;
-    --cor-letra-3: ##ffc300;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +19,7 @@ body {
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
-/*                          CONFIGURAÇÕES DO CONTEÚDO                         */
+/*                       ###CONFIGURAÇÕES DO CONTEÚDO###                      */
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------- CABEÇALHO ------------------------------- */
@@ -42,12 +43,12 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 5px;
+    margin-bottom: 20px;
 }
 
 #menu-cabecalho ul li {
     display: inline-block;
-    padding: 20px ;
-
+    padding: 20px;
 }
 #menu-cabecalho ul li:hover {
     background-color: #ffe48d;
@@ -57,11 +58,66 @@ body {
 #menu-cabecalho ul li a {
     text-decoration: none;
     font-size: 20px;
-    color: #FFF;
+    color: #fff;
     font-weight: bolder;
 }
 /* -------------------------------- CABEÇALHO ------------------------------- */
 
+/* -------------------------------- POSTAGENS ------------------------------- */
+#conteudo {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 0px auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.postagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.postagem img {
+    margin: 20px;
+}
+.postagem {
+    margin-bottom: 10px;
+}
+/* -------------------------------- POSTAGENS ------------------------------- */
+
+/* --------------------------------- RODAPÉ --------------------------------- */
+
+/* --------------------------------- RODAPÉ --------------------------------- */
+
 /* -------------------------------------------------------------------------- */
-/*                          CONFIGURAÇÕES DO CONTEÚDO                         */
+/*                       ###CONFIGURAÇÕES DO CONTEÚDO###                      */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                   EXTRAS                                   */
+/* -------------------------------------------------------------------------- */
+
+.titulo-amarelo {
+    color: var(--cor-letra-1);
+}
+.link-amarelo {
+    color: var(--cor-letra-1);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.titulos-maiores {
+    color: var(--cor-letra-1);
+    font-weight: bold;
+    font-size: 2em;
+}
+.titulo-subtitulo h2 {
+    margin-bottom: 10px;
+}
+.texto-principal-artigo {
+    width: 640px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   EXTRAS                                   */
 /* -------------------------------------------------------------------------- */
