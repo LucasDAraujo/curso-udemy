@@ -25,6 +25,8 @@ body {
 #logo {
     font-size: 40px;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
 }
 .parte-1-logo {
     color: var(--cor-letra-1);
@@ -32,11 +34,31 @@ body {
 .parte-2-logo {
     color: var(--cor-letra-2);
 }
-#cabecalho{
+#cabecalho {
+    padding-top: 30px;
     background-color: var(--cor-do-fundo-2);
 }
-#menu-cabecalho ul li{
-    background-color: var(--cor-do-fundo-2);
+#menu-cabecalho ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#menu-cabecalho ul li {
+    display: inline-block;
+    padding: 20px ;
+
+}
+#menu-cabecalho ul li:hover {
+    background-color: #ffe48d;
+    transition: background-color 0.4s;
+}
+
+#menu-cabecalho ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bolder;
 }
 /* -------------------------------- CABEÇALHO ------------------------------- */
 
