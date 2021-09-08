@@ -14,7 +14,11 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-do-fundo-1);
 }
+#container{
+    min-width: 1450px;
+    max-width: 1600px;
 
+}
 #area-de-postagens {
     float: left;
     margin-left: 200px;
@@ -99,12 +103,17 @@ body {
 
 /* ------------------------------ MENU LATERAL ------------------------------ */
 
-.menu-lateral-1,
-.menu-lateral-2 {
+.menu-lateral {
     width: 300px;
-
-    background-color: var(--cor-do-fundo-3);
+    background-color: #FFF;
 }
+.menu-lateral h2{
+    padding: 15px 5px 15px 0px;
+    background-color: var(--cor-do-fundo-3);
+    font-size: 20px;
+}
+
+
 
 /* ------------------------------ MENU LATERAL ------------------------------ */
 
@@ -128,11 +137,11 @@ body {
 .titulo-amarelo {
     color: var(--cor-letra-1);
 }
-.link-amarelo {
+.link-estilo {
     color: var(--cor-letra-1);
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .titulos-maiores {
