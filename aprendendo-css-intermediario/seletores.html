@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        /* seletor universal */
+        * {
+            border: 1px solid #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* seletor universal */
+
+        /* seletor de texto */
+        h1 {
+            color: purple;
+        }
+
+        /* seletor de texto */
+
+        /* seletor de classe */
+        .verde {
+            color: goldenrod;
+        }
+
+        p.verde {
+            color: rgb(72, 121, 0);
+        }
+
+        /* seletor de classe */
+
+
+        /* seletor de ID */
+        #cabecalho {
+            width: 200px;
+        }
+
+        /* seletor de ID */
+
+        /* seletor de filho */
+        li>a {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* seletor de filho */
+
+        /* Seletor de descendente */
+        .teste p {
+            font-size: 3em;
+        }
+
+        /* Seletor de descendente */
+
+        /* Seletor de irmão adjacente */
+        /* vai selecionar o primeiro que é parente, mas não os outros*/
+        .teste-2 h1+p {
+            color: red;
+            font-size: 2em;
+        }
+
+        /* Seletor de irmão adjascente */
+
+        /* Seletor de irmão geral */
+        /* vai selecionar todos os irmãos*/
+        .teste-3 h1~p {
+            color: red;
+            font-size: 2em;
+        }
+
+        /* Seletor de irmão adjascente */
+    </style>
+</head>
+
+<body>
+    <div id="cabecalho">
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta omnis repellat molestiae unde tempora
+            perferendis eligendi corrupti ipsum provident, ipsam distinctio blanditiis velit quibusdam laborum enim
+            dignissimos! Quia, fugiat quidem?</p>
+    </div>
+    <p class="verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut accusamus harum ab libero
+        voluptatum! Aspernatur dolores deserunt magnam adipisci non animi nam minus ad ullam, impedit quaerat? Rem,
+        nihil.</p>
+    <h2 class="verde">Testando</h2>
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+    </ul>
+    <div class="teste">
+        <p>testandooo</p>
+    </div>
+    <div class="teste-2">
+        <h1>Teste outro</h1>
+        <p>Lalalal</p>
+        <p>Lalalal</p>
+        <p>Lalalal</p>
+    </div>
+    <div class="teste-3">
+        <h1>
+            Teste -3
+        </h1>
+        <p>pato</p>
+        <p>pato</p>
+        <p>pato</p>
+        <p>pato</p>
+        <p>pato</p>
+    </div>
+</body>
+
+</html>
