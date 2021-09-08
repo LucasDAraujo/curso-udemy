@@ -1,0 +1,160 @@
+/* -------------------------------------------------------------------------- */
+/*                            CONFIGURAÇÕES GERAIS                            */
+/* -------------------------------------------------------------------------- */
+:root {
+    --cor-do-fundo-1: #fcf8fc;
+    --cor-do-fundo-2: #ffc300;
+    --cor-do-fundo-3: #dedade;
+
+    --cor-letra-1: #39373a;
+    --cor-letra-2: #fff;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: var(--cor-do-fundo-1);
+}
+#container{
+    min-width: 1450px;
+    max-width: 1600px;
+
+}
+#area-de-postagens {
+    float: left;
+    margin-left: 200px;
+}
+#area-lateral {
+    float: right;
+    margin-right: 210px;
+}
+#rodape {
+    clear: both;
+}
+/* -------------------------------------------------------------------------- */
+/*                            CONFIGURAÇÕES GERAIS                            */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                       ###CONFIGURAÇÕES DO CONTEÚDO###                      */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- CABEÇALHO ------------------------------- */
+#logo {
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+.parte-1-logo {
+    color: var(--cor-letra-1);
+}
+.parte-2-logo {
+    color: var(--cor-letra-2);
+}
+#cabecalho {
+    padding-top: 30px;
+    background-color: var(--cor-do-fundo-2);
+}
+#menu-cabecalho ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+#menu-cabecalho ul li {
+    display: inline-block;
+    padding: 20px;
+}
+#menu-cabecalho ul li:hover {
+    background-color: #ffe48d;
+    transition: background-color 0.4s;
+}
+
+#menu-cabecalho ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+/* -------------------------------- CABEÇALHO ------------------------------- */
+
+/* -------------------------------- POSTAGENS ------------------------------- */
+#conteudo {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0px auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.postagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.postagem img {
+    margin: 20px;
+}
+.postagem {
+    margin-bottom: 10px;
+}
+/* -------------------------------- POSTAGENS ------------------------------- */
+
+/* ------------------------------ MENU LATERAL ------------------------------ */
+
+.menu-lateral {
+    width: 300px;
+    background-color: #FFF;
+}
+.menu-lateral h2{
+    padding: 15px 5px 15px 0px;
+    background-color: var(--cor-do-fundo-3);
+    font-size: 20px;
+}
+
+
+
+/* ------------------------------ MENU LATERAL ------------------------------ */
+
+/* --------------------------------- RODAPÉ --------------------------------- */
+#rodape {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-do-fundo-3);
+}
+/* --------------------------------- RODAPÉ --------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                       ###CONFIGURAÇÕES DO CONTEÚDO###                      */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                   EXTRAS                                   */
+/* -------------------------------------------------------------------------- */
+
+.titulo-amarelo {
+    color: var(--cor-letra-1);
+}
+.link-estilo {
+    color: var(--cor-letra-1);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.titulos-maiores {
+    color: var(--cor-letra-1);
+    font-weight: bold;
+    font-size: 2em;
+}
+.titulo-subtitulo h2 {
+    margin-bottom: 10px;
+}
+.texto-principal-artigo {
+    width: 640px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   EXTRAS                                   */
+/* -------------------------------------------------------------------------- */
