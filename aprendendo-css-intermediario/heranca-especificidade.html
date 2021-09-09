@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="-pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        /* Herança e especificidade */
+
+        * {
+            border: 1px solid #0000ff;
+        }
+
+        body {
+            border: 5px solid #ff0000;
+            /*A borda não aplica herança, a menos que se use o seletor geral*/
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            font-size: 20px;
+        }
+
+        /*Todos os elementos dentro do body herdaram a formatação*/
+
+        #pagina p {
+            color: black !important;
+            /*Com esse atributo, isto vai sobrepor os outros estilos iguais USE POUCO!!!*/
+        }
+
+        #pagina p {
+            color: #ff0000;
+            font-size: 20px;
+            background-color: aqua;
+        }
+
+        h2.verde {
+            color: #00ff00;
+        }
+
+        /* Em seletores iguais, o último sempre é aplicado */
+
+
+        /* SE UM SELETOR FOR MAIS ESPECÍFICO QUE OUTRO, A SUA REGRA SERÁ APLICADA */
+        /* Herança e especificidade */
+    </style>
+</head>
+
+<body>
+    <div id="pagina">
+        <h1>Título</h>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti vero officiis accusamus eum id dolore
+                minima, excepturi, optio necessitatibus veritatis doloremque esse nobis repudiandae, sapiente obcaecati
+                sed error voluptas consectetur?
+            </p>
+        <h2 class="verde">Título 2</h2>
+    </div>
+</body>
+
+</html>
