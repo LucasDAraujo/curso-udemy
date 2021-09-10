@@ -1,0 +1,76 @@
+/* LAYOUT LÍQUIDO (USA PORCENTAGENS)  */
+h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+p {
+    margin-bottom: 5px;
+}
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    background: #f2f2f2;
+}
+#container {
+    width: 85%;
+    margin: 0px auto;
+    background: #fff;
+    min-width: 720px;
+}
+
+#marca {
+    background-color: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+#conteudo {
+    width: 72.5%;
+    float: right;
+}
+#conteudo--principal {
+    width: 62%;
+    float: left;
+}
+#conteudo--secundario {
+    width: 35%;
+    float: right;
+    background-color: #d1d1d1;
+}
+#conteudo--secundario h1,
+#conteudo--secundario h2,
+#conteudo--secundario h3,
+#conteudo--secundario p {
+    padding: 0 20px 0px 20px;
+}
+
+#navegacao {
+    width: 26%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #d1d1d1;
+}
+#navegacao li {
+    text-align: center;
+}
+#navegacao a {
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+#navegacao a:hover {
+    color: #000;
+    background-color: #e0e0e0;
+    transition: background 0.4s;
+}
+#navegacao #primeiro a {
+    border-top: 1px solid #000;
+}
+#rodape {
+    clear: both;
+    background-color: #c4c4c4;
+    padding: 5px;
+}
+/* LAYOUT LÍQUIDO (USA PORCENTAGENS)  */
