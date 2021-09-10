@@ -16,6 +16,7 @@ body {
     margin: 0px auto;
     background: #fff;
     min-width: 720px;
+    max-width: 960px;
 }
 
 #marca {
