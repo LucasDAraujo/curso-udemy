@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="-pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas estilizadas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        th {
+            text-transform: uppercase;
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #111;
+            font-size: 90%;
+            letter-spacing: 0.1em;
+        }
+        tr.alternado{
+          background-color: #efefef;  
+        }
+        tr:hover{
+            background-color: #c3e6e5;
+            transition: background-color 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Estilizando tabelas</h2>
+    <table>
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr class="alternado">
+            <td>001</td>
+            <td>Notebook</td>
+            <td>R$ 1730,00</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Teclado</td>
+            <td>R$ 240,00</td>
+        </tr>
+        <tr class="alternado">
+            <td>003</td>
+            <td>Celular</td>
+            <td>R$ 2730,00</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Mouse</td>
+            <td>R$ 130,00</td>
+        </tr>
+    </table>
+</body>
+
+</html>
