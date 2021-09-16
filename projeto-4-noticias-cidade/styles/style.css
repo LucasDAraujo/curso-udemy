@@ -1,0 +1,68 @@
+/* ---------------------------- ESTRUTURA DO SITE --------------------------- */
+:root {
+    --cor-fonte-menu: #fff;
+    --cor-lista-item: #b10333;
+    --cor-lista-item-hover: #69001d;
+    --cor-lista-item-atual: #de003e;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff url(/images/fundo.png) repeat-x top;
+}
+#container {
+    width: 750px;
+    margin: 0px auto;
+}
+#topo {
+    height: 150px;
+    background: url(/images/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+#topo .logo {
+    width: 152px;
+    height: 66px;
+    background: url(/images/logo.png) no-repeat center;
+    text-indent: -300000px;
+}
+
+/* ---------------------------- ESTRUTURA DO SITE --------------------------- */
+
+/* --------------------------- BARRA DE NAVEGAÇÃO --------------------------- */
+#topo #menu ul {
+    margin-top: 30px;
+    background: var(--cor-lista-item);
+    float: left;
+}
+
+#topo #menu li {
+    float: left;
+}
+#topo #menu li a {
+    font-size: 1em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    color: var(--cor-fonte-menu);
+    text-decoration: none;
+    background: url(/images/divisor.png) no-repeat left center;
+}
+#topo #menu li a:hover {
+    background-color: var(--cor-lista-item-hover);
+    transition: 0.4s;
+}
+
+#topo #menu .primeiro {
+    background: none;
+}
+body.home #topo #menu a#home,
+body.brasil #topo #menu a#brasil,
+body.internacional #topo #menu a#internacional,
+body.economia #topo #menu a#economia,
+body.saude #topo #menu a#saude,
+body.ciencia #topo #menu a#ciencia,
+body.fotos #topo #menu a#fotos {
+    color: var(--cor-fonte-menu);
+    background: var(--cor-lista-item-atual);
+    cursor: text;
+}
+/* --------------------------- BARRA DE NAVEGAÇÃO --------------------------- */
