@@ -1,9 +1,10 @@
 /* ---------------------------- ESTRUTURA DO SITE --------------------------- */
 :root {
-    --cor-fonte-menu: #fff;
+    --cor-fonte-menu-rodape: #fff;
     --cor-lista-item: #b10333;
     --cor-lista-item-hover: #69001d;
     --cor-lista-item-atual: #de003e;
+    --cor-background-rodape: #294c71;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +43,7 @@ body {
     display: block;
     padding: 0.5em 1.5em;
     line-height: 2.1em;
-    color: var(--cor-fonte-menu);
+    color: var(--cor-fonte-menu-rodape);
     text-decoration: none;
     background: url(/images/divisor.png) no-repeat left center;
 }
@@ -61,8 +62,50 @@ body.economia #topo #menu a#economia,
 body.saude #topo #menu a#saude,
 body.ciencia #topo #menu a#ciencia,
 body.fotos #topo #menu a#fotos {
-    color: var(--cor-fonte-menu);
+    color: var(--cor-fonte-menu-rodape);
     background: var(--cor-lista-item-atual);
     cursor: text;
 }
 /* --------------------------- BARRA DE NAVEGAÇÃO --------------------------- */
+
+/* ---------------------------- CONTEÚDO DO SITE ---------------------------- */
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+#primario,
+#secundario,
+#lateral {
+    width: 270px;
+    float: left;
+}
+#primario,
+#secundario {
+    width: 270px;
+}
+
+#primario {
+    background-color: blue;
+}
+#secundario {
+    background-color: green;
+}
+
+#lateral {
+    background-color: yellow;
+    width: 180px;
+}
+/* ---------------------------- CONTEÚDO DO SITE ---------------------------- */
+
+/* ----------------------------- RODAPÉ DO SITE ----------------------------- */
+#container-rodape {
+    background: var(--cor-background-rodape);
+    padding: 20px;
+    clear: both;
+}
+#rodape {
+    color: var(--cor-fonte-menu-rodape);
+    width: 750px;
+    margin: 0px auto;
+}
+/* ----------------------------- RODAPÉ DO SITE ----------------------------- */
