@@ -80,6 +80,7 @@ body.fotos #topo #menu a#fotos {
 }
 /* --------------------------- BARRA DE NAVEGAÇÃO --------------------------- */
 
+
 /* ---------------------------- CONTEÚDO DO SITE ---------------------------- */
 #conteudo {
     margin-top: 60px;
@@ -93,9 +94,26 @@ body.fotos #topo #menu a#fotos {
     width: 180px;
     margin: 0 0 20px -750px;
 }
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+#lateral ul a:hover {
+    background: url(/images/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+    transition: 0.4s;
+}
+
+
 /* CONTEÚDO LATERAL */
 
-/* CONTEÚDO PRIMÁRIO */
+/* CONTEÚDO PRIMÁRIO  */
 #primario {
     width: 270px;
     float: left;
@@ -156,3 +174,26 @@ body.fotos #topo #menu a#fotos {
     margin: 0px auto;
 }
 /* ----------------------------- RODAPÉ DO SITE ----------------------------- */
+
+/* --------------------------------- EXTRAS --------------------------------- */
+
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+    width: 125px;
+    padding: 5px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+input.submit{
+    margin-top: 3px;
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    padding: 5px;
+}
+/* --------------------------------- EXTRAS --------------------------------- */
