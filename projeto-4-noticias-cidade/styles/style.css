@@ -1,10 +1,22 @@
 /* ---------------------------- ESTRUTURA DO SITE --------------------------- */
 :root {
+    /* CORES DO MENU HORIZONTAL */
     --cor-fonte-menu-rodape: #fff;
     --cor-lista-item: #b10333;
     --cor-lista-item-hover: #69001d;
     --cor-lista-item-atual: #de003e;
+    /* CORES DO MENU HORIZONTAL */
+
+    /* CORES DO RODAPÉ */
     --cor-background-rodape: #294c71;
+    /* CORES DO RODAPÉ */
+
+    /* CORES DAS BARRAS DE NAVEGAÇÃO SECUNDÁRIAS */
+    --cor-background-barras-navegacao: #f3f3f3;
+    --cor-background-conteudo-barras-navegacao: #fff;
+    --cor--h2-nav: #fff;
+    --cor-background-titulo: #294c71;
+    /* CORES DAS BARRAS DE NAVEGAÇÃO SECUNDÁRIAS */
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -76,8 +88,6 @@ body.fotos #topo #menu a#fotos {
 
 /* CONTEÚDO LATERAL */
 #lateral {
-    background-color: burlywood;
-
     width: 270px;
     float: left;
     width: 180px;
@@ -87,13 +97,12 @@ body.fotos #topo #menu a#fotos {
 
 /* CONTEÚDO PRIMÁRIO */
 #primario {
+    width: 270px;
     float: left;
     margin: 0 0 20px 195px;
     background-color: burlywood;
 }
-#tres-colunas #primario {
-    width: 270px;
-}
+
 #duas-colunas #primario {
     width: 555px;
 }
@@ -106,12 +115,32 @@ body.fotos #topo #menu a#fotos {
 /* CONTEÚDO SECUNDÁRIO */
 #secundario {
     background-color: burlywood;
-
     width: 270px;
     float: left;
     margin: 0 0 20px 15px;
 }
 /* CONTEÚDO SECUNDÁRIO */
+
+/* BARRAS DE NAVEGAÇÃO */
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    background: var(--cor-background-barras-navegacao)
+        url(/images/fundo-caixa.png);
+}
+.caixa h2 {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    background: #294c71;
+    color: var(--cor--h2-nav);
+}
+.caixa-conteudo {
+    background: var(--cor-background-conteudo-barras-navegacao);
+    padding: 5px;
+    margin-top: 5px;
+}
+/* BARRAS DE NAVEGAÇÃO */
 
 /* ---------------------------- CONTEÚDO DO SITE ---------------------------- */
 
