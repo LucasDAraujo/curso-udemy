@@ -80,12 +80,43 @@ body.fotos #topo #menu a#fotos {
 }
 /* --------------------------- BARRA DE NAVEGAÇÃO --------------------------- */
 
-
 /* ---------------------------- CONTEÚDO DO SITE ---------------------------- */
 #conteudo {
     margin-top: 60px;
     background: #f5f5f5;
 }
+
+/* CAIXAS DE CONTEÚDO */
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    background: var(--cor-background-barras-navegacao)
+        url(/images/fundo-caixa.png);
+}
+.caixa h2 {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    background: #294c71;
+    color: var(--cor--h2-nav);
+}
+.caixa h3 {
+    font-weight: bold;
+    font-size: 0.9em;
+    display: inline;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+.caixa .caixa-conteudo a {
+    color: #b10333;
+}
+.caixa-conteudo {
+    background: var(--cor-background-conteudo-barras-navegacao);
+    padding: 5px;
+    margin-top: 5px;
+}
+/* CAIXAS DE CONTEÚDO */
 
 /* CONTEÚDO LATERAL */
 #lateral {
@@ -110,7 +141,6 @@ body.fotos #topo #menu a#fotos {
     transition: 0.4s;
 }
 
-
 /* CONTEÚDO LATERAL */
 
 /* CONTEÚDO PRIMÁRIO  */
@@ -118,47 +148,46 @@ body.fotos #topo #menu a#fotos {
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;
-    background-color: burlywood;
 }
 
 #duas-colunas #primario {
     width: 555px;
 }
+
 #uma-coluna #primario {
     width: 750px;
     margin: 0 0 20px 0;
+}
+
+img.imagem-principal {
+    border: 3px solid #dfdfdf;
+}
+
+.artigo {
+    margin-top: 15px;
+}
+
+.primeiro {
+    margin-top: 0;
+}
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
 }
 /* CONTEÚDO PRIMÁRIO */
 
 /* CONTEÚDO SECUNDÁRIO */
 #secundario {
-    background-color: burlywood;
     width: 270px;
     float: left;
     margin: 0 0 20px 15px;
 }
-/* CONTEÚDO SECUNDÁRIO */
+.entrevistas h3 {
+    background: #de003e;
+    color: #000;
+}
 
-/* BARRAS DE NAVEGAÇÃO */
-.caixa {
-    margin: 10px 0;
-    padding: 5px;
-    background: var(--cor-background-barras-navegacao)
-        url(/images/fundo-caixa.png);
-}
-.caixa h2 {
-    padding: 5px;
-    font-weight: bold;
-    font-size: 1.1em;
-    background: #294c71;
-    color: var(--cor--h2-nav);
-}
-.caixa-conteudo {
-    background: var(--cor-background-conteudo-barras-navegacao);
-    padding: 5px;
-    margin-top: 5px;
-}
-/* BARRAS DE NAVEGAÇÃO */
+/* CONTEÚDO SECUNDÁRIO */
 
 /* ---------------------------- CONTEÚDO DO SITE ---------------------------- */
 
@@ -177,18 +206,18 @@ body.fotos #topo #menu a#fotos {
 
 /* --------------------------------- EXTRAS --------------------------------- */
 
-label{
+label {
     display: block;
     cursor: pointer;
 }
-input{
+input {
     padding: 5px;
     width: 125px;
     padding: 5px;
     font-size: 0.9em;
     background-color: #fff;
 }
-input.submit{
+input.submit {
     margin-top: 3px;
     width: 80px;
     color: #fff;
@@ -196,4 +225,5 @@ input.submit{
     border: 2px solid #870529;
     padding: 5px;
 }
+
 /* --------------------------------- EXTRAS --------------------------------- */
