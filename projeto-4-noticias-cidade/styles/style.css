@@ -111,6 +111,10 @@ body.fotos #topo #menu a#fotos {
 .caixa .caixa-conteudo a {
     color: #b10333;
 }
+.caixa .caixa-conteudo a:hover {
+    color: #e50040;
+    transition: 0.4s;
+}
 .caixa-conteudo {
     background: var(--cor-background-conteudo-barras-navegacao);
     padding: 5px;
@@ -186,7 +190,7 @@ img.imagem-principal {
     font-size: 0.85em;
     padding: 0;
 }
-#lista-noticias li:hover{
+#lista-noticias li:hover {
     cursor: pointer;
     background: #eeee;
     transition: 0.4s;
