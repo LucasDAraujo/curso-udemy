@@ -55,7 +55,7 @@ body {
 }
 /* LOGO DO SITE */
 /* ------------------------------------ * ----------------------------------- */
-/* MENU DO SITE */
+/* CONFIGURAÇÕES DO MENU */
 #area-menu {
     background: url(/images/topo-imagem-lateral.png) no-repeat;
     right: 0;
@@ -67,6 +67,9 @@ body {
     margin-right: 15px;
     padding-top: 15px;
 }
+/* CONFIGURAÇÕES DO MENU */
+/* ------------------------------------ * ----------------------------------- */
+/*LOCAIS DO SITE */
 #menu-locais {
     border-bottom: 1px solid #b5ab56;
     border-top: 1px solid #b5ab56;
@@ -79,8 +82,6 @@ body {
 #menu-locais .locais {
     float: left;
     line-height: 2.1em;
-    text-decoration: none;
-
 }
 a.reserva {
     text-transform: uppercase;
@@ -88,10 +89,35 @@ a.reserva {
     color: #fff5b0;
     padding: 5px 10px;
     float: right;
-    text-decoration: none;
 }
-/* MENU DO SITE */
+/*LOCAIS DO SITE E LINK RESERVAR*/
+/* ------------------------------------ * ----------------------------------- */
+/*BARRA DE NEVEGAÇÃO VERTICAL*/
+#menu-navegacao {
+    margin-top: 15px;
+}
+.depoimento {
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+ul#navegacao {
+    float: left;
+}
+ul#navegacao a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;
+}
+ul#navegacao a:hover {
+    transition: 0.3s;
+    background-color: #fdf6be;
+}
 
+/*BARRA DE NEVEGAÇÃO VERTICAL*/
+/* ------------------------------------ * ----------------------------------- */
 /* -------------------------------------------------------------------------- */
 /*                                TOPO DO SITE                                */
 /* -------------------------------------------------------------------------- */
