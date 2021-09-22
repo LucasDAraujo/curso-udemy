@@ -4,6 +4,7 @@
 :root {
     --cor-de-fundo-1: #ede9cc;
     --cor-de-fundo-2: #dbcd87;
+    --cor-titulo-rodape: #7b7640;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -128,6 +129,7 @@ ul#navegacao a:hover {
 /*                              CONTEÚDO DO SITE                              */
 /* -------------------------------------------------------------------------- */
 /* ------------------------------------ * ----------------------------------- */
+/* ÁREAS DE CONTEÚDO */
 #area-principal,
 #area-lateral {
     width: 50%;
@@ -149,7 +151,52 @@ ul#navegacao a:hover {
 }
 #rodape {
     clear: both;
+    padding: 16px;
+    background: #fff url(/images/bg.png) repeat-x top;
+    text-align: center;
+    color: var(--cor-titulo-rodape);
 }
+/* ÁREAS DE CONTEÚDO */
+/* ------------------------------------ * ----------------------------------- */
+/* FORMATAÇÃO DE TEXTOS */
+#area-principal h2 {
+    color: var(--cor-titulo-rodape);
+    font-size: 1.3em;
+    padding: 5px 0px;
+}
+#area-principal,
+#area-lateral p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+#lista-beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+#lista-beneficios li a img {
+    float: left;
+    margin-right: 8px;
+}
+#lista-beneficios li a p {
+    font-size: 0.9em;
+    color: #000;
+}
+#lista-beneficios li a h3 {
+    font-size: 1.1em;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(/images/ornamento.png) no-repeat center right;
+}
+#lista-beneficios li:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #f6f3d6;
+}
+/* FORMATAÇÃO DE TEXTOS */
+/* ------------------------------------ * ----------------------------------- */
 /* -------------------------------------------------------------------------- */
 /*                              CONTEÚDO DO SITE                              */
 /* -------------------------------------------------------------------------- */
