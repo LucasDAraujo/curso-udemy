@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="-pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Parallax</title>
+        <style>
+            /* FORMATAÇÃO DO BODY */
+            body,
+            html {
+                font: 16px "Lato", sans-serif;
+                color: #777;
+                height: 100%;
+            }
+            .conteudo {
+                color: #777;
+                background-color: white;
+                text-align: justify;
+                padding: 50px 80px;
+            }
+            h3 {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #111;
+            }
+            /* FORMATAÇÃO DO BODY */
+            /* ---------------------------------- * ---------------------------------- */
+            /* EFEITO PARALLAX */
+            .caixa-1,
+            .caixa-2 {
+                border: 1px solid red;
+                height: 100%;
+            }
+            .caixa-1 {
+                
+                background-image: url(/imagens/imagem1.jpg);
+            }
+            .caixa-2 {
+                background-image: url(/imagens/imagem2.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="caixa-1">conteudo 1</div>
+        <div class="conteudo">
+            <h3>Parallax</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+                fugiat, quos voluptas sit facere modi suscipit nostrum. Minima,
+                ullam cum cupiditate nostrum veniam fugiat nam nobis ipsum
+                maiores necessitatibus cumque?
+            </p>
+        </div>
+        <div class="caixa-2">conteudo 3</div>
+    </body>
+</html>
