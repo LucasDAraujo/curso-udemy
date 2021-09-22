@@ -12,6 +12,8 @@
                 font: 16px "Lato", sans-serif;
                 color: #777;
                 height: 100%;
+                box-sizing: border-box;
+                margin: 0 auto;
             }
             .conteudo {
                 color: #777;
@@ -25,20 +27,34 @@
                 font-weight: bold;
                 color: #111;
             }
+            p {
+                margin-bottom: 20px;
+            }
             /* FORMATAÇÃO DO BODY */
             /* ---------------------------------- * ---------------------------------- */
             /* EFEITO PARALLAX */
             .caixa-1,
-            .caixa-2 {
-                border: 1px solid red;
+            .caixa-2,
+            .caixa-3,
+            .caixa-4 {
                 height: 100%;
+                opacity: 0.7;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
             }
             .caixa-1 {
-                
                 background-image: url(/imagens/imagem1.jpg);
             }
             .caixa-2 {
                 background-image: url(/imagens/imagem2.jpg);
+            }
+            .caixa-3 {
+                background-image: url(/imagens/imagem3.jpg);
+            }
+            .caixa-4 {
+                background-image: url(/imagens/imagem4.jpg);
             }
         </style>
     </head>
@@ -53,6 +69,17 @@
                 maiores necessitatibus cumque?
             </p>
         </div>
-        <div class="caixa-2">conteudo 3</div>
+        <div class="caixa-2"></div>
+        <div class="caixa-3"></div>
+        <div class="conteudo">
+            <h3>Parallax</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+                fugiat, quos voluptas sit facere modi suscipit nostrum. Minima,
+                ullam cum cupiditate nostrum veniam fugiat nam nobis ipsum
+                maiores necessitatibus cumque?
+            </p>
+        </div>
+        <div class="caixa-4"></div>
     </body>
 </html>
