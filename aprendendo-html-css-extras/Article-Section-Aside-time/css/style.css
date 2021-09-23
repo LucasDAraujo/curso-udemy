@@ -1,16 +1,28 @@
 header {
-    border: 1px solid red;
+    border: 1px solid #000;
     padding: 10px;
     background-color: #f2f2f2;
 }
-nav{
-   text-decoration: none; 
-   border: 1px solid red;
-   padding: 10px;
-}
-footer{
-    text-align: center;
-    text-decoration: none; 
-    border: 1px solid red;
+nav {
+    text-decoration: none;
+    border: 1px solid #000;
     padding: 10px;
- }
+}
+article {
+    background-color: #f2f2f2;
+    text-align: justify;
+    text-decoration: none;
+    padding: 10px;
+}
+section {
+    border: 1px solid #000;
+}
+footer {
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 10px;
+}
+aside{
+    background-color: #f2f2f2;
+}
