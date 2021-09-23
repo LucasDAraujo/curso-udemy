@@ -1,0 +1,10 @@
+#caixa {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+}
+#caixa:hover {
+    background-color: red;
+    transition: 0.4s;
+}
