@@ -1,42 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Museu Nacional - Home</title>
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museu Nacional - Home</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
-        <!-- INÍCIO DO CONTAINER -->
-        <div id="container">
-            <!-- INÍCIO DO HEADER -->
-            <header>
-                <div id="logo">
-                    <h1>
-                        <a href="#">Museu Nacional</a>
-                    </h1>
-                </div>
-                <!-- INÍCIO DO NAV -->
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Exposições</a></li>
-                        <li><a href="#">Pesquisa</a></li>
-                        <li><a href="#">Acervo</a></li>
-                        <li><a href="#">Vídeos</a></li>
-                        <li><a href="#">Fotos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-                <!-- FIM DO NAV -->
-            </header>
-            <!-- FIM DO HEADER -->
-        </div>
-        <!-- FIM DO CONTAINER -->
-    </body>
+</head>
+
+<body>
+    <!-- INÍCIO DO CONTAINER -->
+    <div id="container">
+        <!-- INÍCIO DO HEADER -->
+        <header>
+            <div id="logo">
+                <h1>
+                    <a href="#">Museu Nacional</a>
+                </h1>
+            </div>
+            <!-- INÍCIO DO NAV -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Exposições</a></li>
+                    <li><a href="#">Pesquisa</a></li>
+                    <li><a href="#">Acervo</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- FIM DO NAV -->
+        </header>
+        <!-- FIM DO HEADER -->
+
+        <!-- INÍCIO DO MAIN -->
+        <main>
+            <!-- INÍCIO DO CONTEÚDO -->
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="img/museu.png" alt="Imagem do museu nacional" />
+                </section>
+            </div>
+            <!-- INÍCIO DO CONTEÚDO -->
+
+            <!-- INÍCIO DO ASIDE -->
+            <aside>
+
+                <section id="depoimento">
+                    <img src="img/depoimento.png" alt="Depoimento de um diretor do museu nacional" />
+                </section>
+
+                <!-- INÍCIO DA VISITA -->
+                <section id="visita">
+                    <h4>Faça uma visita</h4>
+                    <form action="">
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+                            <label for="data">Data</label>
+                            <input class="campo" type="text" name="data" id="data" value="dd/mm/aaaa" />
+
+                            <label for="qtd">Qtd de pessoas</label>
+                            <input class="campo" style="width: 30px;" type="number" name="qtd" id="qtd" min="1"
+                                value="1" />
+
+                        </fieldset>
+                        <input class="botao" type="submit" value="Verificar disponibilidade"></input>
+
+                    </form>
+                </section>
+                <!-- FIM DA VISITA -->
+                <section id="galeria">
+                    <h4>Galeria de fotos</h4>
+                    <a href="#">
+                        <img src="img/imagem1.jpg" style="height: 93px; width: 93px;" alt="Entrada do museu">
+                    </a>
+                    <a href="#">
+                        <img src="img/imagem2.jpg" style="height: 93px; width: 93px;" alt="Sessão do museu com vários itens">
+                    </a>
+                    <a href="#">
+                        <img src="img/imagem3.jpg" style="height: 93px; width: 93px;" alt="Vestido em exposição">
+                    </a>
+                    <a href="#">
+                        <img src="img/imagem4.jpg" style="height: 93px; width: 93px;" alt="Pinturas numa parede">
+                    </a>
+                </section>
+            </aside>
+            <!-- FIM DO ASIDE -->
+        </main>
+        <!-- FIM DO MAIN -->
+    </div>
+    <!-- FIM DO CONTAINER -->
+</body>
+
 </html>
