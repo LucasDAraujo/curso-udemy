@@ -71,7 +71,6 @@ nav ul li a:hover {
 #conteudo {
     width: 710px;
     float: left;
-    background-color: azure;
 }
 
 /* CONTEÚDO LATERAL */
@@ -87,8 +86,8 @@ section#visita {
 }
 section#galeria {
     padding: 0 27px 0 27px;
-    
 }
+
 section#galeria a {
     display: block;
     background: url(/img/fundo-foto.png) no-repeat;
@@ -136,6 +135,35 @@ legend {
 /* FORMULÁRIOS */
 
 /* CONTEÚDO LATERAL */
+
+/* ARTIGOS */
+article.conteudo-artigo {
+    float: left;
+    width: 310px;
+}
+article#video {
+    margin-left: 25px;
+    
+}
+article#mapa {
+    margin-left: 37px;
+}
+article#exposicoes {
+    margin-left: 37px;
+    margin: 15px 0 0 25px;
+}
+article#historia {
+    margin-left: 37px;
+    margin: 15px 0 0 25px;
+
+}
+h3 {
+    color: #227115;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+/* ARTIGOS */
 
 /* -------------------------------------------------------------------------- */
 /*                              CONTEÚDO DO SITE                              */
