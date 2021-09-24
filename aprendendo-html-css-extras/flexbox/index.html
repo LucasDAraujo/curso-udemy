@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox - Flexible Box Layout</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!--[if lt IE 9]>
+            <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
+        <style>
+            #conteudo {
+                background-color: #dcdcdc;
+                height: 600px;
+                display: flex;
+
+                /* row|row-reverse|column|column-reverse
+                flex-direction: row;
+                nowrap(não quebra os itens, diminui eles)|wrap(quebra)|wrap-reverse
+                flex-wrap: wrap;
+                center|flex-start|flex-end|space-between|space-around|space-evenly
+                justify-content: space-evenly;
+                center | flex-start | flex-end | stretch
+                align-items: center;*/
+
+
+            }
+
+            /* ORDER DEFINE A ORDEM DOS ELEMENTOS
+            .ordem1 {
+                order: 1;
+            }
+            .ordem2 {
+                order: 2;
+            }
+            .ordem3 {
+                order: 3;
+            }
+            .ordem4 {
+                order: 4;
+            }
+            .ordem {
+                order: -1;
+            }*/
+
+
+            .item {
+                /* width: 200px; */
+                height: 100px;
+                margin: 10px;
+                background-color: white;
+                border: 1px solid gray;
+
+                /* ORDER DEFINE A ORDEM DOS ELEMENTOS
+                order: 0;
+
+
+                FLEX-GROW DEFINE A PROPORÇÃO DO ESPAÇO OCUPADO POR UM ITEM
+                flex-grow: 0;
+
+                FLEX-SHRINK DEFINE A CAPACIDADE DE REDUÇÃO DE UM ITEM
+                flex-shrink: 1; */
+
+                /* FLEX-BASIS INDICA O TAMANHO INICIAL DO FLEX-ITEM ANTES A DISTRIBUIÇÃO DO ESPAÇO RESTANTE  */
+                flex-basis: 200px;
+
+
+            } 
+
+            .item1 {
+                /* flex-grow: 1;*/
+                /* flex-shrink: 1;*/ 
+                /* flex-basis: auto; */
+
+            }
+            .item3 {
+                /*flex-grow: 2;
+                flex-shrink: 2;*/
+            }
+            .item3 {
+                /*flex-grow: 2;
+                flex-shrink: 5;*/
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Flexbox</h1>
+        <div id="conteudo">
+            <div class="item item1">01</div>
+            <div class="item item2">02</div>
+            <div class="item item3">03</div>
+            <div class="item">04</div>
+        </div>
+    </body>
+</html>
