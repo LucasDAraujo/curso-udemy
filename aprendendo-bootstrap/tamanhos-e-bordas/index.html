@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+
+        <title>Bootstrap - Tamanhos e bordas</title>
+    </head>
+
+    <body
+        style="
+            width: 600px;
+            margin: 0 auto;
+            margin-bottom: 200px;
+            padding: 16px;
+            background-color: #ccc;
+        "
+    >
+        <!-- Classes de largura -->
+        <h1>Classes de largura</h1>
+        <div class="bg-primary text-white w-25">Width 25%</div>
+        <div class="bg-secondary text-white w-50">Width 50%</div>
+        <div class="bg-success text-white w-75">Width 75%</div>
+        <div class="bg-danger text-white w-100">Width 100%</div>
+        <div class="bg-info text-white w-auto">Width auto</div>
+        <br /><br />
+        <hr />
+        <!-- Classes de largura -->
+
+        <!-- Classes de altura -->
+        <h1>Classes de altura</h1>
+        <div style="height: 300px">
+            <div class="h-25 d-inline-block bg-primary text-white">
+                Height 25%
+            </div>
+            <div class="h-50 d-inline-block bg-secondary text-white">
+                Height 50%
+            </div>
+            <div class="h-75 d-inline-block bg-success text-white">
+                Height 75%
+            </div>
+            <div class="h-100 d-inline-block bg-danger text-white">
+                Height 100%
+            </div>
+            <div class="h-auto d-inline-block bg-info text-white">
+                Height auto
+            </div>
+        </div>
+        <br /><br />
+        <hr />
+        <!-- Classes de altura -->
+        <br /><br />
+        <hr />
+        <!-- Bordas
+            border        -> todas as bordas
+            border-top    -> borda superior
+            border-bottom -> borda inferior
+            border-right  -> bordar direita
+            border-left   -> borda esquerda
+
+        Cores de bordas
+        border-<cor>: primary, secondary, success, 
+            info, warning, danger, light, dark, white
+        -->
+        <div class="bg-white mt-3 border border-info">Border em todos</div>
+        <div class="bg-white mt-3 border-top border-danger">Border-top</div>
+        <div class="bg-white mt-3 border-bottom border-primary">
+            Border-bottom
+        </div>
+        <div class="bg-white mt-3 border-right border-success">
+            border-right
+        </div>
+        <div class="bg-white mt-3 border-left border-warning">Border-left</div>
+
+        <br /><br />
+        <hr />
+
+        <!-- 
+            Border Radius 
+            opções: rounded, rounded-top, rounded-right, 
+                    rounded-right, rounded-left, rounded-circle
+        -->
+        <div class="bg-light mb-2 border border-danger rounded">rounded</div>
+        <div class="bg-light mb-2 border border-danger rounded-top">
+            rounded top
+        </div>
+        <div class="bg-light mb-2 border border-danger rounded-bottom">
+            rounded bottom
+        </div>
+        <div class="bg-light mb-2 border border-danger rounded-right">
+            rounded right
+        </div>
+        <div class="bg-light mb-2 border border-danger rounded-left">
+            rounded left
+        </div>
+        <div
+            class="bg-light mb-2 p-5 border border-primary rounded-circle w-25"
+        >
+            rounded circle
+        </div>
+
+        <br /><br />
+        <hr />
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
