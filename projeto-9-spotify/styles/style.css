@@ -1,12 +1,19 @@
-/* --------------------------------- LAYOUT --------------------------------- */
+/* LAYOUT */
+html,
+body,
+#home {
+    height: 100%;
+}
+
 body {
     background: url(/images/capa.png), url(/images/ruido.png),
         linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
 }
-/* --------------------------------- LAYOUT --------------------------------- */
+/* -------------------------------------------------------------------------- */
 
-/* --------------------------------- NAVBAR --------------------------------- */
+/* NAVBAR */
 nav.navbar-transparente {
     padding: 15px 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -28,4 +35,86 @@ nav.navbar-transparente {
     background-color: #fff;
     margin: 12px 15px;
 }
-/* --------------------------------- NAVBAR --------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* CAPA */
+.capa {
+    text-align: center;
+}
+.btn-custom {
+    color: #fff;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+.btn-roxo {
+    background-color: #7c25f8;
+}
+.btn-roxo:hover {
+    background-color: #6207e3;
+    color: #fff;
+}
+.btn-branco {
+    border: 2px solid #fff;
+}
+.btn-branco:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* -------------------------------------------------------------------------- */
+
+/* TIPOGRAFIA */
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+/* Starting on Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .btn-roxo {
+        margin-right: 20px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+}
