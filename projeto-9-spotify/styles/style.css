@@ -3,6 +3,7 @@ html,
 body,
 #home {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -64,6 +65,33 @@ nav.navbar-transparente {
 }
 /* -------------------------------------------------------------------------- */
 
+/* ESTRUTURA DOS CONTEÚDOS */
+#servicos {
+    background-color: #fff;
+}
+#servicos h2,
+h3 {
+    color: #7c25f8;
+}
+
+#recursos {
+    color: #fff;
+}
+#recursos h3 {
+    color: #9bf0e1;
+}
+.caixa {
+    padding: 20px 0;
+}
+.albuns {
+    padding: 10px 0;
+}
+.rotacionar {
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+/* -------------------------------------------------------------------------- */
+
 /* TIPOGRAFIA */
 h1 {
     font-weight: 900;
@@ -71,6 +99,16 @@ h1 {
     margin-bottom: 50px;
     color: #fff;
 }
+h2,
+h3 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+h3 {
+    font-size: 2em;
+}
+
 /* -------------------------------------------------------------------------- */
 
 /* ------------------------------ MEDIA QUERIES ----------------------------- */
