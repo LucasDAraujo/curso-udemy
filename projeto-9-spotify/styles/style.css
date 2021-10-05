@@ -2,6 +2,7 @@
 html,
 body,
 #home {
+    
     height: 100%;
     overflow-x: hidden;
 }
@@ -90,6 +91,11 @@ h3 {
     transform: rotate(30deg);
     padding-left: 80px;
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5%;
+}
 /* -------------------------------------------------------------------------- */
 
 /* RODAPÉ */
@@ -145,8 +151,12 @@ h3 {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .btn-custom {
-        margin: 10px 15px;
+        margin: 5px 15px;
         font-size: 1em;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        font-size: 1.3em;
     }
 }
 
@@ -158,6 +168,10 @@ h3 {
     .btn-custom {
         font-size: 1.5em;
     }
+    .carousel-control-next,
+    .carousel-control-prev {
+        font-size: 1.6em;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -165,11 +179,19 @@ h3 {
     h1 {
         font-size: 4em;
     }
+    .carousel-control-next,
+    .carousel-control-prev {
+        font-size: 2em;
+    }
 }
 /* Starting on Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .btn-roxo {
         margin-right: 20px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        font-size: 3em;
     }
 }
 
