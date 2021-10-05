@@ -1,222 +1,107 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* LAYOUT */
 html,
 body,
-#home {
-    
-    height: 100%;
-    overflow-x: hidden;
-}
+#home { height: 100%; overflow-x: hidden; } 
 
-body {
-    background: url(/images/capa.png), url(/images/ruido.png),
-        linear-gradient(50deg, #ff4169, #7c26f8);
-    background-attachment: fixed;
-    font-family: Helvetica, Arial, sans-serif;
-}
+body { background: url(/images/capa.png), url(/images/ruido.png),
+ -o-linear-gradient(40deg, #ff4169, #7c26f8); background: url(/images/capa.png), url(/images/ruido.png),
+ linear-gradient(50deg, #ff4169, #7c26f8); background-attachment: fixed; font-family: Helvetica, Arial, sans-serif; } 
 /* -------------------------------------------------------------------------- */
 
 /* NAVBAR */
-nav.navbar-transparente {
-    padding: 15px 0;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.navbar-light .navbar-nav .nav-link {
-    color: #fff;
-}
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #9bf0e1;
-}
+nav.navbar-transparente { padding: 15px 0; background-color: rgba(0, 0, 0, 0.6); } 
+.navbar-light .navbar-nav .nav-link { color: #fff; } 
+.navbar-light .navbar-nav .nav-link:hover { color: #9bf0e1; } 
 
-.navbar-light .navbar-toggler {
-    color: rgb(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
-}
+.navbar-light .navbar-toggler { color: rgb(255, 255, 255, 0.5); border-color: rgba(255, 255, 255, 0.5); } 
 
-.divisor {
-    width: 1px;
-    background-color: #fff;
-    margin: 12px 15px;
-}
+.divisor { width: 1px; background-color: #fff; margin: 12px 15px; } 
 /* -------------------------------------------------------------------------- */
 
 /* CAPA */
-.capa {
-    text-align: center;
-}
-.btn-custom {
-    color: #fff;
-    border-radius: 500px;
-    text-transform: uppercase;
-    transition: background 0.4s, color 0.4s;
-    padding: 10px 20px;
-}
-.btn-roxo {
-    background-color: #7c25f8;
-}
-.btn-roxo:hover {
-    background-color: #6207e3;
-    color: #fff;
-}
-.btn-branco {
-    border: 2px solid #fff;
-}
-.btn-branco:hover {
-    background-color: #fff;
-    color: #000;
-}
+.capa { text-align: center; } 
+.btn-custom { color: #fff; border-radius: 500px; text-transform: uppercase; -webkit-transition: background 0.4s, color 0.4s; -o-transition: background 0.4s, color 0.4s; transition: background 0.4s, color 0.4s; padding: 10px 20px; } 
+.btn-roxo { background-color: #7c25f8; } 
+.btn-roxo:hover { background-color: #6207e3; color: #fff; } 
+.btn-branco { border: 2px solid #fff; } 
+.btn-branco:hover { background-color: #fff; color: #000; } 
 /* -------------------------------------------------------------------------- */
 
 /* ESTRUTURA DOS CONTEÚDOS */
-#servicos {
-    background-color: #fff;
-}
+#servicos { background-color: #fff; } 
 #servicos h2,
-h3 {
-    color: #7c25f8;
-}
+h3 { color: #7c25f8; } 
 
-#recursos {
-    color: #fff;
-}
-#recursos h3 {
-    color: #9bf0e1;
-}
-.caixa {
-    padding: 20px 0;
-}
-.albuns {
-    padding: 10px 0;
-}
-.rotacionar {
-    transform: rotate(30deg);
-    padding-left: 80px;
-}
+#recursos { color: #fff; } 
+#recursos h3 { color: #9bf0e1; } 
+.caixa { padding: 20px 0; } 
+.albuns { padding: 10px 0; } 
+.rotacionar { -webkit-transform: rotate(30deg); -ms-transform: rotate(30deg); transform: rotate(30deg); padding-left: 80px; } 
 
 .carousel-control-next,
-.carousel-control-prev {
-    width: 5%;
-}
+.carousel-control-prev { width: 5%; } 
 /* -------------------------------------------------------------------------- */
 
 /* RODAPÉ */
-footer {
-    background-color: #000;
-    padding: 50px 0 20px 0;
-    position: relative;
-}
-footer h4 {
-    color: #919496;
-    font-size: 0.8em;
-    text-transform: uppercase;
-}
-footer .navbar-nav a {
-    color: #fff;
-    font-size: 0.8em;
-}
-footer .navbar-nav a:hover {
-    color: #9bfe01;
-    font-size: 0.8em;
-    text-decoration: none;
-}
-footer ul {
-    list-style: none;
-}
-footer ul li {
-    float: right;
-    margin: 0 5px;
-}
+footer { background-color: #000; padding: 50px 0 20px 0; position: relative; } 
+footer h4 { color: #919496; font-size: 0.8em; text-transform: uppercase; } 
+footer .navbar-nav a { color: #fff; font-size: 0.8em; } 
+footer .navbar-nav a:hover { color: #9bfe01; font-size: 0.8em; text-decoration: none; } 
+footer ul { list-style: none; } 
+footer ul li { float: right; margin: 0 5px; } 
 /* -------------------------------------------------------------------------- */
 
 /* TIPOGRAFIA */
-h1 {
-    font-weight: 900;
-    letter-spacing: -0.05em;
-    margin-bottom: 50px;
-    color: #fff;
-}
+h1 { font-weight: 900; letter-spacing: -0.05em; margin-bottom: 50px; color: #fff; } 
 h2,
-h3 {
-    font-size: 3em;
-    font-weight: 700;
-    letter-spacing: -0.04em;
-}
-h3 {
-    font-size: 2em;
-}
+h3 { font-size: 3em; font-weight: 700; letter-spacing: -0.04em; } 
+h3 { font-size: 2em; } 
 
 /* -------------------------------------------------------------------------- */
 
 /* ------------------------------ MEDIA QUERIES ----------------------------- */
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    .btn-custom {
-        margin: 5px 15px;
-        font-size: 1em;
-    }
-    .carousel-control-next,
-    .carousel-control-prev {
-        font-size: 1.3em;
-    }
-}
+@media (max-width: 575.98px){
+ .btn-custom { margin: 5px 15px; font-size: 1em; } 
+ .carousel-control-next,
+ .carousel-control-prev { font-size: 1.3em; } 
+ }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    h1 {
-        font-size: 3em;
-    }
-    .btn-custom {
-        font-size: 1.5em;
-    }
-    .carousel-control-next,
-    .carousel-control-prev {
-        font-size: 1.6em;
-    }
-}
+@media (min-width: 576px) and (max-width: 767.98px) { h1 { font-size: 3em; } 
+ .btn-custom { font-size: 1.5em; } 
+ .carousel-control-next,
+ .carousel-control-prev { font-size: 1.6em; } 
+ }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    h1 {
-        font-size: 4em;
-    }
-    .carousel-control-next,
-    .carousel-control-prev {
-        font-size: 2em;
-    }
-}
+@media (min-width: 768px) and (max-width: 991.98px) { h1 { font-size: 4em; } 
+ .carousel-control-next,
+ .carousel-control-prev { font-size: 2em; } 
+ }
 /* Starting on Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .btn-roxo {
-        margin-right: 20px;
-    }
-    .carousel-control-next,
-    .carousel-control-prev {
-        font-size: 3em;
-    }
-}
+@media (min-width: 768px){
+ .btn-roxo { margin-right: 20px; } 
+ .carousel-control-next,
+ .carousel-control-prev { font-size: 3em; } 
+ }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    h1 {
-        font-size: 5em;
-    }
-}
+@media (min-width: 992px) and (max-width: 1199.98px) { h1 { font-size: 5em; } 
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 6em;
-    }
-    p {
-        font-size: 20px;
-    }
-    footer .navbar-nav a {
-        font-size: 1.2em;
-    }
-    .btn-custom {
-        font-size: 1.6em;
-    }
-    footer h4 {
-        font-size: 1.4em;
-    }
-}
+@media (min-width: 1200px) { h1 { font-size: 6em; } 
+ p { font-size: 20px; } 
+ footer .navbar-nav a { font-size: 1.2em; } 
+ .btn-custom { font-size: 1.6em; } 
+ footer h4 { font-size: 1.4em; } 
+ }
