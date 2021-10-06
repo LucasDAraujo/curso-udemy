@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calcular média do aluno</title>
+        <script>
+            let media = 0;
+
+            let n1 = parseInt(prompt("Entre com a nota 1 do aluno"));
+            let n2 = parseInt(prompt("Entre com a nota 2 do aluno"));
+            let n3 = parseInt(prompt("Entre com a nota 3 do aluno"));
+            let n4 = parseInt(prompt("Entre com a nota 4 do aluno"));
+            let faltas = parseInt(prompt("Entre com as faltas do aluno"));
+            media = (n1 + n2 + n3 + n4) / 4;
+
+            document.write(
+                media >= 7 && faltas <= 40
+                    ? "Aluno aprovado!<br>"
+                    : "Aluno reprovado<br>"
+            );
+            document.write("Média:" + media);
+        </script>
+    </head>
+    <body></body>
+</html>
