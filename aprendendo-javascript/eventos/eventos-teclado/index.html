@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eventos com o teclado</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <!--PRESSIONAR UMA TECLA -->
+            <h2>Clique no campo e pressione uma tecla(onkeydown):</h2>
+            <input onkeydown="acao1()" type="text" />
+            <!--PRESSIONAR UMA TECLA -->
+
+            <!--PRESSIONAR UMA TECLA E SOLTE-->
+            <h2>
+                Clique no campo e pressione uma tecla de CARACTERE, a ação
+                ocorrerá imediatamente ao pressionar(onkeypress):
+            </h2>
+            <input onkeypress="acao2()" type="text" />
+            <!--PRESSIONAR UMA TECLA E SOLTE-->
+
+            <!--PRESSIONAR UMA TECLA E SOLTE-->
+            <h2>
+                Clique no campo e pressione uma tecla, a ação ocorrerá quando
+                soltar(onkeyup):
+            </h2>
+            <input onkeyup="acao3()" type="text" />
+            <!--PRESSIONAR UMA TECLA E SOLTE-->
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

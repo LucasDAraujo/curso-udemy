@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eventos com o mouse</title>
+    </head>
+    <body>
+        <div
+            class="container"
+            style="display: flex; justify-content: space-evenly"
+        >
+            <!-- UM CLIQUE -->
+            <div
+                onclick="acao()"
+                style="
+                    background-color: #ccc;
+                    height: 150px;
+                    width: 150px;
+                    margin: 30px;
+                "
+            >
+                Clique aqui
+            </div>
+            <!-- UM CLIQUE -->
+
+            <!-- DOIS CLIQUES -->
+            <div
+                ondblclick="acao2()"
+                style="
+                    background-color: #ccc;
+                    height: 150px;
+                    width: 150px;
+                    margin: 30px;
+                "
+            >
+                Clique aqui <strong>duas</strong> vezes
+            </div>
+            <!-- DOIS CLIQUES -->
+
+            <!-- CLIQUE E SOLTE -->
+            <div
+                onmouseup="acao3()"
+                style="
+                    background-color: #ccc;
+                    height: 150px;
+                    width: 150px;
+                    margin: 30px;
+                "
+            >
+                Clique aqui <strong>e solte</strong>
+            </div>
+            <!-- CLIQUE E SOLTE -->
+
+            <!-- PASSAR O MOUSE EM CIMA -->
+            <div
+                onmouseover="acao4()"
+                style="
+                    background-color: #ccc;
+                    height: 150px;
+                    width: 150px;
+                    margin: 30px;
+                "
+            >
+                <strong>Passe aqui </strong> o mouse
+            </div>
+            <!-- PASSAR O MOUSE EM CIMA -->
+
+            <!-- PASSAR O MOUSE EM CIMA E TIRAR -->
+            <div
+                onmouseout="acao5()"
+                style="
+                    background-color: #ccc;
+                    height: 150px;
+                    width: 150px;
+                    margin: 30px;
+                "
+            >
+                <strong>Passe aqui </strong> o mouse e <strong>tire</strong>
+            </div>
+            <!-- PASSAR O MOUSE EM CIMA E TIRAR -->
+
+              <!-- AÇÃO DUPLA -->
+              <div
+              onmouseover="acaoDupla2()"
+              onmouseout="acaoDupla1()"
+              style="
+                  background-color: #ccc;
+                  height: 150px;
+                  width: 150px;
+                  margin: 30px;
+              "
+          >
+              <strong>Passe aqui </strong> o mouse e <strong>tire</strong>
+          </div>
+          <!-- AÇÃO DUPLA -->
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

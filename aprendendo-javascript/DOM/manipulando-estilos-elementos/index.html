@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM - MODIFICANDO ESTILOS DE ELEMENTOS</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <h1>MODIFICANDO ESTILO DOS ELEMENTOS</h1>
+        <div id="botoes">
+            <button
+                class="botao"
+                id="vermelho"
+                onclick="modificaEstilo('#ff0000')"
+            >
+                Vermelho
+            </button>
+            <button
+                class="botao"
+                id="verde"
+                onclick="modificaEstilo('#adff2f')"
+            >
+                Verde
+            </button>
+            <button class="botao" id="azul" onclick="modificaEstilo('#00ccff')">
+                Azul
+            </button>
+        </div>
+        <div id="retangulo"><h1>MUDE MINHA COR</h1></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

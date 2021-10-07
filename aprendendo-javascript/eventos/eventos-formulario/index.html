@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eventos com o teclado</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- FOCAR NO ELEMENTO COM CLIQUE OU TAB -->
+            <h2>Clique neste elemento ou navegue até ele com o tab</h2>
+            <input
+                onfocus="console.log('Evento disparado, você focou neste campo!')"
+                type="text"
+            />
+            <!-- FOCAR NO ELEMENTO COM CLIQUE OU TAB -->
+
+            <!-- FOCAR NO ELEMENTO COM CLIQUE OU TAB E DEPOIS TIRAR O FOCO-->
+            <h2>
+                Clique neste elemento ou navegue até ele com o tab e depois saia
+                do mesmo
+            </h2>
+            <input
+                onblur="console.log('Evento disparado, você focou neste campo e saiu!')"
+                type="text"
+            />
+            <!-- FOCAR NO ELEMENTO COM CLIQUE OU TAB E DEPOIS TIRAR O FOCO-->
+
+            <!-- MODIFICAR O ELEMENTO -->
+            <h2>Modifique este elemento</h2>
+            <select onChange="console.log('Estado modificado!')">
+                <option>Selecione</option>
+                <option value="1">Primeira opção</option>
+                <option value="2">Segunda opção</option>
+            </select>
+            <!-- MODIFICAR O ELEMENTO -->
+        </div>
+    </body>
+</html>

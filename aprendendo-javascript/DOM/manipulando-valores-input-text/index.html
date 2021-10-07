@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - MODIFICANDO VALORES DE INPUT DO TIPO TEXT</title>
+</head>
+
+<body>
+    <h1>MODIFICANDO VALORES DE INPUT DO TIPO TEXT</h1>
+
+    <form style="display: flex; flex-direction: column">
+        <!-- É PRECISO INCLUIR UM EVENTO NO CAMPO EM QUE OS CARACTERES SERÃO DIGITADOS -->
+        <label for="letras">Digite caracteres:</label>
+        <input onkeyup="distribuiCaracter()" type="text" name="entrada" id="entrada"
+            placeholder="Digite um caracter aqui" />
+
+        <label for="letras">Letras:</label>
+        <input type="text" id="apenas-letras" disabled="disabled" />
+
+        <label for="numeros">Números:</label>
+        <input type="text" id="apenas-numeros" disabled="disabled" />
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
