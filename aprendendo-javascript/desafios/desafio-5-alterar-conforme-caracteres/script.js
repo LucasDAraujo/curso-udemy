@@ -1,7 +1,7 @@
 function modificaBackgroundOnFocus() {
     document.getElementById("entrada").style.backgroundColor = "#FFFF00";
 }
-
+console.log(pau);
 function modificaBackgroundOnBlur() {
     texto = document.getElementById("entrada").value;
     if (texto.length < 3) {
