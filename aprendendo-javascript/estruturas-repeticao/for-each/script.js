@@ -10,7 +10,3 @@ listaFuncionarios.forEach(function (valor, indice, array) {
         array[indice] = 'João legal'
     }
 })
-
-listaFuncionarios.forEach(nome => {
-    lista
-});
