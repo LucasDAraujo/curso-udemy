@@ -1,3 +1,35 @@
+body {
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+/* --------------------------------- PAINEL --------------------------------- */
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px 0;
+    bottom: 0px;
+    left: 0px;
+    border-top: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* VIDAS */
+vidas {
+    float: left;
+}
+/* VIDAS */
+
+/* CRONÔMETRO */
+cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* CRONÔMETRO */
+/* --------------------------------- PAINEL --------------------------------- */
+
+/* ----------------------- POSICIONAMENTO DO MOSQUITO ----------------------- */
 .lado-1 {
     transform: scaleX(1);
 }
@@ -19,3 +51,4 @@
     height: 90px;
     position: absolute;
 }
+/* ----------------------- POSICIONAMENTO DO MOSQUITO ----------------------- */
