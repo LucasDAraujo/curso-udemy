@@ -80,7 +80,9 @@ function posicionaRandomicamente() {
     imagemMosquito.src = 'images/mosca.png'
     imagemMosquito.id = 'mosquito'
     imagemMosquito.draggable = false
-
+    imagemMosquito.onclick = function () {
+        this.remove()
+    }
 
     //Dá uma classe css aleatória baseada no retorno da função(tamanhos e lados)
     imagemMosquito.className = `mosquito-${tamanhoAleatorioMosquitos()}`
