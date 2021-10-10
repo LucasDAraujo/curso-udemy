@@ -1,5 +1,6 @@
-// Vidas do jogador
+// Vidas do jogador e tempo do game
 let vidas = 1
+let tempo = 10
 
 /* ---------------------------- REDIMENSIONA JOGO --------------------------- */
 
@@ -12,6 +13,22 @@ function redimensionaPalcoJogo() {
     largura = window.innerWidth
     altura = window.innerHeight
 
+}
+// Conta o tempo do game
+function cronometroJogo() {
+    let cronometro = setInterval(() => {
+
+        tempo--
+        if (tempo < 0) {
+            clearInterval(cronometroJogo)
+            clearInterval(criaMosquito)
+            alert("Vitória")
+        } else {
+            document.getElementById("cronometro").innerHTML = " " + tempo
+
+        }
+
+    }, 1000);
 }
 /* ---------------------------- REDIMENSIONA JOGO --------------------------- */
 
