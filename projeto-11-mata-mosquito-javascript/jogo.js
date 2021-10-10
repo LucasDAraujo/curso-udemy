@@ -22,7 +22,8 @@ function cronometroJogo() {
         if (tempo < 0) {
             clearInterval(cronometroJogo)
             clearInterval(criaMosquito)
-            alert("Vitória")
+            
+            window.location.href = 'vitoria.html'
         } else {
             document.getElementById("cronometro").innerHTML = " " + tempo
 
