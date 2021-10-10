@@ -1,0 +1,21 @@
+.lado-1 {
+    transform: scaleX(1);
+}
+.lado-2 {
+    transform: scaleX(-1);
+}
+.mosquito-1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.mosquito-2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+.mosquito-3 {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+}
