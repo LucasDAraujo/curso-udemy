@@ -1,3 +1,11 @@
+html {
+    cursor: url(/images/mata_mosquito.png) 30 30, auto;
+    
+}
+.clicou{
+    cursor: url(/images/mata_mosquito_clique.png) 30 30, auto;
+}
+
 body {
     background: url("../images/bg.jpg") no-repeat;
     background-size: cover;

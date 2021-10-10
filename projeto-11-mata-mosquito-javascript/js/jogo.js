@@ -2,6 +2,8 @@
 let vidas = 1
 let tempo = 10
 
+
+
 /* ----------------------- SETA A DIFICULDADE DO JOGO ----------------------- */
 criaMosquitoTempo = 1500
 
@@ -18,9 +20,8 @@ if (dificuldadeEscolhida === 'normal') {
 }
 /* ----------------------- SETA A DIFICULDADE DO JOGO ----------------------- */
 
+
 /* ---------------------------- REDIMENSIONA JOGO --------------------------- */
-
-
 
 //Altura e largura do browser
 let largura = window.innerWidth
@@ -82,14 +83,26 @@ function posicionaRandomicamente() {
     imagemMosquito.onclick = function () {
         this.remove()
     }
+    mosquito.play()
+
+    imagemMosquito.onmousedown = function () {
+        slap.play()
+        
+    }
 
     //Dá uma classe css aleatória baseada no retorno da função(tamanhos e lados)
     imagemMosquito.className = `mosquito-${tamanhoAleatorioMosquitos()}`
     imagemMosquito.className += ` lado-${ladoAleatorio()}`
-
+    
     //Define a posição do inseto
     imagemMosquito.style.left = `${posicaoX}px`
     imagemMosquito.style.top = `${posicaoY}px`
+   
+
+    // imagemMosquito. = function () {
+
+
+    // }
     document.body.appendChild(imagemMosquito)
 }
 /* ----------------- FUNÇÕES QUE CONTROLAM OS MOSQUITOS E PONTOS DE HP --------------- */

@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<script src="js/efeitos.js"></script>
+
+<html
+    id="html"
+    lang="pt-br"
+    onmousedown="mudarCursor()"
+    onmouseup="resetarCursor()"
+>
     <head>
         <!-- Meta tags Obrigatórias -->
         <meta charset="utf-8" />
@@ -100,6 +108,8 @@
                 }
                 window.location.href = "app.html?" + dificuldadeEscolhida;
             }
+
+            musicaMenu.play();
         </script>
     </body>
 </html>
