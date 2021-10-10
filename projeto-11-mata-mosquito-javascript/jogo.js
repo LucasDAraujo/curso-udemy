@@ -25,7 +25,7 @@ function posicionaRandomicamente() {
 
         //Quando você remove o mosquito automaticamente, subtrai 1 ponto de HP do player
         if (vidas > 3) {
-            alert('Interrompeu o jogo')
+            window.location.href = 'fim-de-jogo.html'
         } else {
             document.getElementById(`vida-${vidas}`).src = 'images/coracao_vazio.png'
             vidas++
