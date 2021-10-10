@@ -2,7 +2,25 @@
 let vidas = 1
 let tempo = 10
 
+/* ----------------------- SETA A DIFICULDADE DO JOGO ----------------------- */
+criaMosquitoTempo = 1500
+
+// Extrai o nível de dificuldade escolhido
+let dificuldadeEscolhida = window.location.search
+dificuldadeEscolhida = dificuldadeEscolhida.replace('?', '')
+
+if (dificuldadeEscolhida === 'normal') {
+    criaMosquitoTempo = 1500
+} else if (dificuldadeEscolhida === 'dificil') {
+    criaMosquitoTempo = 1000
+} else if (dificuldadeEscolhida === 'muito-dificil') {
+    criaMosquitoTempo = 750
+}
+/* ----------------------- SETA A DIFICULDADE DO JOGO ----------------------- */
+
 /* ---------------------------- REDIMENSIONA JOGO --------------------------- */
+
+
 
 //Altura e largura do browser
 let largura = window.innerWidth
@@ -22,7 +40,7 @@ function cronometroJogo() {
         if (tempo < 0) {
             clearInterval(cronometroJogo)
             clearInterval(criaMosquito)
-            
+
             window.location.href = 'vitoria.html'
         } else {
             document.getElementById("cronometro").innerHTML = " " + tempo
