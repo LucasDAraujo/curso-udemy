@@ -80,29 +80,16 @@ function posicionaRandomicamente() {
     imagemMosquito.src = 'images/mosca.png'
     imagemMosquito.id = 'mosquito'
     imagemMosquito.draggable = false
-    imagemMosquito.onclick = function () {
-        this.remove()
-    }
-    mosquito.play()
 
-    imagemMosquito.onmousedown = function () {
-        slap.play()
-        
-    }
 
     //Dá uma classe css aleatória baseada no retorno da função(tamanhos e lados)
     imagemMosquito.className = `mosquito-${tamanhoAleatorioMosquitos()}`
     imagemMosquito.className += ` lado-${ladoAleatorio()}`
-    
+
     //Define a posição do inseto
     imagemMosquito.style.left = `${posicaoX}px`
     imagemMosquito.style.top = `${posicaoY}px`
-   
 
-    // imagemMosquito. = function () {
-
-
-    // }
     document.body.appendChild(imagemMosquito)
 }
 /* ----------------- FUNÇÕES QUE CONTROLAM OS MOSQUITOS E PONTOS DE HP --------------- */

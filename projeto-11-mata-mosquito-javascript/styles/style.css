@@ -1,9 +1,5 @@
-html {
-    cursor: url(/images/mata_mosquito.png) 30 30, auto;
-    
-}
-.clicou{
-    cursor: url(/images/mata_mosquito_clique.png) 30 30, auto;
+.module {
+    cursor: url("images/mata_mosquito.png"), auto;
 }
 
 body {
