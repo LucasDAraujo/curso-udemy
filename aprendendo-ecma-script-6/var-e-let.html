@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            //3 escopos: global, função e bloco, a variável não sofre içamento
+            // if (true) {
+            //     let serie = "friends";
+            // }
+            // console.log(serie);
+
+            var serie = "friends";
+            {
+                var serie = "The Walking Dead";
+                console.log(`Dentro do bloco ${serie}`);
+            }
+            console.log(`Fora do bloco ${serie}`);
+            
+            //As variáveis não se sobrepoem com o let
+            let serie2 = "The Office";
+            {
+                let serie2 = "Flash";
+                console.log(`Dentro do bloco ${serie2}`);
+            }
+            console.log(`Fora do bloco ${serie2}`);
+        </script>
+        <title>Let e var</title>
+    </head>
+    <body></body>
+</html>
