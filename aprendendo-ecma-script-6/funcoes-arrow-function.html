@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            //Função anônima tradicional
+            let quadrado = function (x = 0) {
+                return Math.pow(x, 2);
+            };
+            document.write(`1 - Resultado de 3²:${quadrado(3)}`);
+
+            //Função arrow
+            let quadradoNovo = (x) => {
+                return x * x;
+            };
+            document.write(`<br />2 - Resultado de 3²:${quadrado(3)}`);
+
+            //Função com apenas uma instrução
+            //Você pode omitir os parênteses se só tiver 1 parâmetro
+            //Se a função só for de retorno, tira as chaves e o return tbm!
+            let quadradoNovo2 = (x) => x * x; //Return implícito
+
+            document.write(`<br />3 - Resultado de 3²:${quadrado(3)}`);
+
+
+            let parOuImpar = (x) => (x % 2 === 0 ? "Par" : "Impar");
+            document.write(`<br />3 é :${parOuImpar(3)}`);
+
+            k
+        </script>
+        <title>Arrow function</title>
+    </head>
+    <body></body>
+</html>
