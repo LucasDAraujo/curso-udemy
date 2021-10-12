@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            class Produto {
+                constructor(descricao) {
+                    this._descricao;
+                    this._preco;
+                }
+                get descricao() {
+                    return this._descricao;
+                }
+                set descricao(setaAtributoDescricao) {
+                    this._descricao = setaAtributoDescricao;
+                }
+                get preco() {
+                    return this._preco;
+                }
+                set preco(setaAtributoPreco) {
+                    this._preco = setaAtributoPreco;
+                }
+                verDescricao() {
+                    console.log(`${this.descricao} por apenas R$${this.preco}`);
+                }
+            }
+            const produto1 = new Produto();
+            produto1.descricao = "Celular Random";
+            produto1.preco = 1999;
+            produto1.verDescricao();
+
+            //Objeto literal
+            const produtoLiteral = {
+                descricao: "Notebook",
+                preco: 1500,
+                verDescricao: function () {
+                    console.log(`${this.descricao} por apenas R$${this.preco}`);
+                },
+            };
+            produtoLiteral.verDescricao();
+        </script>
+        <title>OOP - Objeto literal</title>
+    </head>
+</html>
