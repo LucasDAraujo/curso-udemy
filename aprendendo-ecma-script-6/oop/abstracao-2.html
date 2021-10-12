@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            //Software de marcenaria
+            //Objetos: cadeira e sofá
+
+            // PARADIGMA PROCEDURAL
+            //cadeira
+            /*let qtdPernas = 4;
+            let giratoria = false;
+            let cor = "Azul";
+
+            //Array de cadeiras
+            let cadeiras = Array();
+
+            cadeiras[0] = Array();
+            cadeiras[0]["qtd-de-pernas"] = 4;
+            cadeiras[0]["giratoria"] = false;
+            cadeiras[0]["cor"] = "azul";
+
+            cadeiras[1] = Array();
+            cadeiras[1]["qtd-de-pernas"] = 1;
+            cadeiras[1]["giratoria"] = true;
+            cadeiras[1]["cor"] = "preta";
+
+            console.log(cadeiras);
+            function girarCadeira(indice) {
+                cadeiras[indice]["giratoria"] === true
+                    ? console.log("Girou")
+                    : console.log("Cadeira não é giratória");
+            }
+            girarCadeira(1);
+
+            function adicionarCadeira(
+                pernasQtd = 4,
+                giratoria = false,
+                cor = "preta"
+            ) {
+                let cadeira = Array();
+                cadeira["pernasQtd"] = pernasQtd;
+                cadeira["giratoria"] = giratoria;
+                cadeira["cor"] = cor;
+
+                cadeiras.push(cadeira);
+            }
+            adicionarCadeira();
+            console.log(cadeiras);*/
+
+            //PARADIGMA ORIENTADO A OBJETOS
+            class Cadeira {
+                constructor(pernasQtd, giratoria, cor) {
+                    this.pernasQtd = pernasQtd;
+                    this.giratoria = giratoria;
+                    this.cor = cor;
+                }
+
+                giraOuNao() {
+                    this.giratoria
+                        ? console.log("Gira")
+                        : console.log("Não gira");
+                }
+            }
+
+            class Sofa {
+                constructor(numeroLugares, cor, reclinavel) {
+                    this.numeroLugares = numeroLugares;
+                    this.cor = cor;
+                    this.reclinavel = reclinavel;
+                }
+                reclinavelOuNao() {
+                    console.log(this.reclinavel);
+                }
+            }
+
+            const cadeira1 = new Cadeira(4, true, "preta");
+            const cadeira2 = new Cadeira(1, false, "laranja");
+            cadeira2.giraOuNao();
+            console.log(cadeira1);
+            let listaCadeiras = [cadeira1, cadeira2];
+            listaCadeiras.push(new Cadeira(3, true, "rosa"));
+            console.log(listaCadeiras);
+
+            const sofa1 = new Sofa(3, "Amarelo", true);
+            sofa1.reclinavelOuNao();
+            
+        </script>
+        <title>Abstração 2 OOP</title>
+    </head>
+    <body></body>
+</html>
