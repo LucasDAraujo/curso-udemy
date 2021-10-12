@@ -7,16 +7,18 @@
 
         <script>
             let pessoa = {
-                nome: "josé",
-                idade: 45,
+                nome: "Maria",
+                idade: 25,
             };
-            console.log(pessoa.nome);
-            pessoa.nome = "Fernanda";
-            console.log(pessoa.nome);
-            pessoa.idade = 32;
-            console.log(pessoa.idade);
+
+            //Incluir novo atributo
+            console.log(pessoa);
+            pessoa.sexo = "Feminino";
+            console.log(pessoa);
+            pessoa.dizerOi = () => console.log("Olá,tudo bem?");
+            pessoa.dizerOi();
         </script>
-        <title>Objetos literais - modificando valores</title>
+        <title>Object Prototypeb</title>
     </head>
     <body></body>
 </html>
