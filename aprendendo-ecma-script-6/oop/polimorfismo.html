@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            class Animal {
+                constructor(cor, tamanho, peso) {
+                    this.cor = cor;
+                    this.tamanho = tamanho;
+                    this.peso = peso;
+                }
+                dormir() {
+                    console.log("dormir");
+                }
+            }
+            class Passaro extends Animal {
+                constructor(bicoTamanho, cor, tamanho, peso) {
+                    super(cor, tamanho, peso);
+                    this.bico = bicoTamanho;
+                }
+                voar() {
+                    console.log("Voar");
+                }
+            }
+            class Papagaio extends Passaro {
+                constructor(sabeFalar, cor, tamanho, peso) {
+                    super("Médio", cor, tamanho, peso);
+                    this.sabeFalar = sabeFalar;
+                }
+                falar() {
+                    console.log("Loro, Loro");
+                }
+            }
+            class Avestruz extends Passaro {
+                constructor(tamanhoBico, cor, tamanho, peso) {
+                    super(tamanhoBico, cor, tamanho, peso);
+                }
+                EnterrarCabeca() {
+                    console.log("Enterrar a cabeça");
+                }
+                voar(){
+                    console.log('Não sabe voar')
+                }
+            }
+
+            const avestruz1 = new Avestruz(
+                "Grande",
+                "Branco e preto",
+                250,
+                120
+            );
+            const papagaio1 = new Papagaio(true, "Verde", 25, 350);
+            const papagaio2 = new Papagaio(false, "Branco", 5, 51);
+            console.log(papagaio1, papagaio2, avestruz1);
+            papagaio1.voar();
+            avestruz1.voar();
+            avestruz1.EnterrarCabeca();
+        </script>
+        <title>Herança - Operador super</title>
+    </head>
+</html>
