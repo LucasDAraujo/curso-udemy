@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            class Televisao {
+                constructor() {
+                    //A convenção para chamar um atributo de "privado" é botar um _ na frente
+                    this._relacaoCanais = [2, 4, 5, 7, 10];
+                    this._canalAtivo = 5;
+                    this._volume = 5;
+                }
+                //Getters e setters
+                get canalAtivo() {
+                    return this._canalAtivo;
+                }
+                set canalAtivo(canalNovo) {
+                    if (this._relacaoCanais.indexOf(canalNovo) !== -1) {
+                        this._canalAtivo = canalNovo;
+                    } else {
+                        console.log("Canal indisponível");
+                    }
+                }
+            }
+            const televisao1 = new Televisao();
+            console.log(televisao1.canalAtivo);
+            televisao1.canalAtivo = 57;
+            console.log(televisao1.canalAtivo);
+        </script>
+        <title>Encapsulamento</title>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            //Modelo do objeto
+
+            class ContaBancaria {
+                //agencia
+                //numConta
+                //saldo
+                //limite
+
+                //define os atributos do modelo do objeto
+                constructor() {
+                    this.agencia = 1073;
+                    this.numeroConta = 777789;
+                    this.saldo = 900;
+                    this.limite = 450;
+                }
+                //MÉTODOS
+                depositar(valorDeposito) {
+                    this.saldo += valorDeposito;
+                }
+                sacar(valorSaque) {
+                    if (this.saldo >= valorSaque) {
+                        this.saldo -= valorSaque;
+                    } else {
+                        try {
+                            throw new Error("Saldo insuficiente");
+                        } catch (error) {
+                            return alert(error);
+                        }
+                    }
+                }
+                consultarSaldo() {
+                    return `R$:${this.saldo}<br />`;
+                }
+            }
+
+            //Referenciando o objeto instanciado pela classe
+            let conta = new ContaBancaria();
+            let conta2 = new ContaBancaria();
+
+            document.write(conta.consultarSaldo());
+            conta.depositar(parseFloat(prompt("Digite o valor do depósito:")));
+            document.write(`saldo após depósito ${conta.consultarSaldo()}`);
+            conta.sacar(parseFloat(prompt("Digite o valor do saque:")));
+            document.write(`saldo após saque ${conta.consultarSaldo()}`);
+        </script>
+        <title>Abstração OOP</title>
+    </head>
+    <body></body>
+</html>
