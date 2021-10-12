@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            let assinatura = {
+                idCLiente: 1000,
+                descricao: "Acesso a internet",
+                status() {
+                    console.log("Ativo");
+                },
+            }
+            console.log(assinatura.descricao)
+            let y = assinatura
+            console.log(y.descricao)
+            y.descricao = 'Internet + tv + telefone'
+            console.log(y.descricao)
+            console.log(assinatura.descricao)
+
+        </script>
+        <title>Objetos literais - Objeto único</title>
+    </head>
+    <body></body>
+</html>
