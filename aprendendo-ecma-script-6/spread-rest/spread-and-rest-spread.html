@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            let tituloArtigo = "Como utilizar o operador rest/spread";
+            //O spread pegas os dados e distribui nas outras estruturas
+            console.log(tituloArtigo);
+            console.log(...tituloArtigo); //Literalmente espalha as coisas
+            console.log([...tituloArtigo]);
+            
+            //spread em arrays
+            let listaCursos1 = new Array(
+                "Node JS e MongoDB",
+                "ES6,Typescript e Angular 4"
+            );
+            let listaCursos2 = new Array(
+                "Multiplataforma, Android",
+                "Introdução ao GNU/LINUX"
+            );
+            listaCursosCompleto = new Array(
+                "Web Completo",
+                "Android Completo",
+                ...listaCursos1,
+                ...listaCursos2
+            );
+            console.log(listaCursosCompleto); //Espalha os índices
+
+            //objetos
+            let pessoa = { nome: "João", idade: 27 };
+            let clone = { endereco: "Rua ABC", ...pessoa }; //O spread pega os atributos e coloca neste novo objeto
+            console.log(clone);
+        </script>
+        <title>Spread</title>
+    </head>
+    <body></body>
+</html>
