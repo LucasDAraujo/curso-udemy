@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            Object.prototype.atributo50 = "Z";
+            
+            let animal = {
+                atributo1: "a",
+            };
+            let vertebrado = {
+                __proto__: animal,
+                atributo2: "b",
+            };
+
+            let ave = { __proto__: vertebrado, atributo3: "c" };
+            console.log(ave.atributo2);
+            console.log(ave.atributo1, ave.atributo50);
+        </script>
+        <title>Object Prototype - Prototype chain</title>
+    </head>
+    <body></body>
+</html>
