@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            let frutas = ["Abacaxi", "uva", "pera", "mamao"];
+            // let a = frutas[0]
+            // let b = frutas[1]
+            // let c = frutas[2]
+            // let d = frutas[3]
+
+            //let [a, b, , c] = frutas;
+            //Pra destruir,você usa colchetes, enquanto faz isso
+            //,você cria novas variáveis, use espaços em branco para pular
+            //------------------------------------------------------------------
+            //Você pode definir valores padrões para caso o retorno seja
+            //undefined
+            let [a, b, c, d, e = "abacate"] = frutas;
+            console.log(a, b, c, d, e);
+
+            //Você pode extrair valoes de arrays multidimensionais também
+
+            let coisas = [
+                ["Abacaxi", "uva", "pera", "mamao"],
+                ["José", "Maria"],
+            ];
+            let [, [pessoa, , pessoa2 = "sem nome"]] = coisas; //use [] para entrar nos vetores
+            let [[,,fruta]]= coisas;
+            console.log(pessoa, pessoa2,fruta);
+        </script>
+        <title>Destructuring</title>
+    </head>
+    <body></body>
+</html>
