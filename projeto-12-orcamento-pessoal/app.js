@@ -1,4 +1,4 @@
-/* -------------------------- CRIA A CLASSE DESPESA ------------------------- */
+/* -------------------------- CRIA AS CLASSES ------------------------- */
 class Despesa {
     constructor(ano, mes, dia, tipo, descricao, valor) {
         this.ano = ano;
@@ -9,7 +9,34 @@ class Despesa {
         this.valor = valor;
     }
 }
-/* -------------------------- CRIA A CLASSE DESPESA ------------------------- */
+
+class Bd {
+    constructor() {
+        //Inicia um valor pro ID se essa dado não existir no local storage
+        let id = localStorage.getItem('id')
+        if (id === null) {
+            localStorage.setItem('id', 0)
+        }
+    }
+    getProximoId() {
+        let proximoId = localStorage.getItem('id')
+        return parseInt(proximoId) + 1
+    }
+
+    //GRAVA A DESPESA NO LOCAL STORAGE
+    //PARA USAR LOCAL STORAGE, VOCÊ PRECISA PASSAR O PARÂMETRO(obj literal) EM NOTAÇÃO JSON
+    gravar(despesaNova) {
+
+        let id = this.getProximoId()
+        //Converte obj literal passado no parâmetro em JSON
+
+        localStorage.setItem(id, JSON.stringify(despesaNova))
+        
+        localStorage.setItem('id', id)
+    }
+}
+let bd = new Bd()
+/* -------------------------- CRIA A CLASSES ------------------------- */
 
 /* -------------------------- SELECIONA OS VALORES -------------------------- */
 function cadastrarDespesa(params) {
@@ -28,15 +55,6 @@ function cadastrarDespesa(params) {
         descricao.value,
         valor.value
     );
-    gravar(despesa)
+    bd.gravar(despesa)
 }
 /* -------------------------- SELECIONA OS VALORES -------------------------- */
-
-/* -------------------- GRAVA A DESPESA NO LOCAL STORAGE -------------------- */
-//PARA USAR LOCAL STORAGE, VOCÊ PRECISA PASSAR O PARÂMETRO(obj literal) EM NOTAÇÃO JSON
-function gravar(despesaNova) {
-    //Converte obj literal em JSON
-    localStorage.setItem('despesa', JSON.stringify(despesaNova))
-    JSON.pa
-}
-/* -------------------- GRAVA A DESPESA NO LOCAL STORAGE -------------------- */
