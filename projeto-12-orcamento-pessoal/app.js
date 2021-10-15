@@ -28,6 +28,15 @@ function cadastrarDespesa(params) {
         descricao.value,
         valor.value
     );
-    console.log(despesa);
+    gravar(despesa)
 }
 /* -------------------------- SELECIONA OS VALORES -------------------------- */
+
+/* -------------------- GRAVA A DESPESA NO LOCAL STORAGE -------------------- */
+//PARA USAR LOCAL STORAGE, VOCÊ PRECISA PASSAR O PARÂMETRO(obj literal) EM NOTAÇÃO JSON
+function gravar(despesaNova) {
+    //Converte obj literal em JSON
+    localStorage.setItem('despesa', JSON.stringify(despesaNova))
+    JSON.pa
+}
+/* -------------------- GRAVA A DESPESA NO LOCAL STORAGE -------------------- */
