@@ -69,6 +69,10 @@ class Bd {
         return listaDespesas
     }
 
+    pesquisar(despesa){
+         
+    }
+
 }
 let bd = new Bd()
 /* -------------------------- CRIA A CLASSES ------------------------- */
@@ -148,7 +152,6 @@ function carregaListaDespesas() {
 
     ///percorrer o array despesas listando cada despesa de forma dinâmica
     despesasRecuperadas.forEach(despesa => {
-        console.log(despesa)
 
         //criando a linha da tabela(tr)
         let linhaTabela = TableBody.insertRow()
@@ -183,3 +186,18 @@ function carregaListaDespesas() {
 }
 
 /* ---------------------- CARREGAR A LISTA DE DESPESAS ---------------------- */
+
+
+/* --------------------------- PESQUISAR DESPESAS --------------------------- */
+function pesquisarDespesa() {
+    let ano = document.getElementById("ano").value,
+        mes = document.getElementById("mes").value,
+        dia = document.getElementById("dia").value,
+        tipo = document.getElementById("tipo").value,
+        descricao = document.getElementById("descricao").value,
+        valor = document.getElementById("valor").value
+
+    let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
+    bd.pesquisar(despesa)
+}
+/*  --------------------------- PESQUISAR DESPESAS --------------------------- */
