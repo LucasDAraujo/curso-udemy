@@ -70,7 +70,7 @@ function cadastrarDespesa(params) {
 
     if (despesa.validarDados()) {
         //Dialog de sucesso
-        //bd.gravar(despesa)
+        bd.gravar(despesa)
         $('#sucessoGravacao').modal('show')
     } else {
         //Dialog de erro
