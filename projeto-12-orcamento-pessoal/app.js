@@ -94,6 +94,7 @@ function cadastrarDespesa(params) {
     if (despesa.validarDados()) {
         //Dialog de sucesso
         bd.gravar(despesa)
+        limpaCampos()
         document.getElementById('modal-header').classList.remove('text-danger')
         document.getElementById('modal-header').classList.add('text-success')
 
@@ -103,6 +104,8 @@ function cadastrarDespesa(params) {
 
         document.getElementById('btn-Modal').classList.remove('btn-danger')
         document.getElementById('btn-Modal').classList.add('btn-success')
+
+
 
         $('#registraDespesa').modal('show')
     } else {
@@ -119,6 +122,16 @@ function cadastrarDespesa(params) {
 
         $('#registraDespesa').modal('show')
     }
+}
+
+function limpaCampos() {
+    document.getElementById("ano").value = ''
+    document.getElementById("mes").value = ''
+    document.getElementById("dia").value = ''
+    document.getElementById("tipo").value = ''
+    document.getElementById("descricao").value = ''
+    document.getElementById("valor").value = ''
+
 }
 /* -------------------------- REALIZA O CADASTRO DE ELEMENTOS E VERIFICA OS CAMPOS -------------------------- */
 
@@ -166,7 +179,7 @@ function carregaListaDespesas() {
 
         }
         linhaTabela.insertCell(1).innerHTML = despesa.tipo
-        
+
         linhaTabela.insertCell(2).innerHTML = despesa.descricao
         linhaTabela.insertCell(3).innerHTML = `R$${despesa.valor}`
     });
