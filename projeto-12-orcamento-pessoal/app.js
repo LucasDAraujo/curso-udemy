@@ -94,7 +94,6 @@ function cadastrarDespesa(params) {
     if (despesa.validarDados()) {
         //Dialog de sucesso
         bd.gravar(despesa)
-        limpaCampos()
         document.getElementById('modal-header').classList.remove('text-danger')
         document.getElementById('modal-header').classList.add('text-success')
 
@@ -105,7 +104,13 @@ function cadastrarDespesa(params) {
         document.getElementById('btn-Modal').classList.remove('btn-danger')
         document.getElementById('btn-Modal').classList.add('btn-success')
 
-
+        //Limpa os campos após tudo ser gravado
+        ano.value = ''
+        mes.value = ''
+        dia.value = ''
+        tipo.value = ''
+        descricao.value = ''
+        valor.value = ''
 
         $('#registraDespesa').modal('show')
     } else {
@@ -124,15 +129,7 @@ function cadastrarDespesa(params) {
     }
 }
 
-function limpaCampos() {
-    document.getElementById("ano").value = ''
-    document.getElementById("mes").value = ''
-    document.getElementById("dia").value = ''
-    document.getElementById("tipo").value = ''
-    document.getElementById("descricao").value = ''
-    document.getElementById("valor").value = ''
 
-}
 /* -------------------------- REALIZA O CADASTRO DE ELEMENTOS E VERIFICA OS CAMPOS -------------------------- */
 
 
