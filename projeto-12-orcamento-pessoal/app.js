@@ -67,14 +67,33 @@ function cadastrarDespesa(params) {
         descricao.value,
         valor.value
     );
-
+    //Se os dados forem válidos, gravar despesa e eexibir mensagem, senão, não gravar e exibir msg de erro
     if (despesa.validarDados()) {
         //Dialog de sucesso
         bd.gravar(despesa)
-        $('#sucessoGravacao').modal('show')
+        document.getElementById('modal-header').classList.remove('text-danger')
+        document.getElementById('modal-header').classList.add('text-success')
+
+        document.getElementById('modal-title').innerHTML = 'Registro inserido com sucesso!'
+
+        document.getElementById('modal-body').innerHTML = 'Sua nova despesa foi computada corretamente!'
+
+        document.getElementById('btn-Modal').classList.remove('btn-danger')
+        document.getElementById('btn-Modal').classList.add('btn-success')
+        $('#registraDespesa').modal('show')
     } else {
         //Dialog de erro
-        $('#erroGravacao').modal('show')
+        document.getElementById('modal-header').classList.remove('text-success')
+        document.getElementById('modal-header').classList.add('text-danger')
+
+        document.getElementById('modal-title').innerHTML = 'Registro inválido!'
+
+        document.getElementById('modal-body').innerHTML = 'Existem campos não preenchidos no formulário!'
+
+        document.getElementById('btn-Modal').classList.remove('btn-success')
+        document.getElementById('btn-Modal').classList.add('btn-danger')
+
+        $('#registraDespesa').modal('show')
     }
 }
 /* -------------------------- SELECIONA OS VALORES -------------------------- */
