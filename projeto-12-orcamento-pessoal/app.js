@@ -8,6 +8,16 @@ class Despesa {
         this.descricao = descricao;
         this.valor = valor;
     }
+
+    //Valida se os atributos estão preenchidos corretamente
+    validarDados() {
+        for (const i in this) {
+            if (this[i] == undefined || this[i] == '' || this[i] == null) {
+                return false
+            }
+        }
+        return true
+    }
 }
 
 class Bd {
@@ -18,6 +28,7 @@ class Bd {
             localStorage.setItem('id', 0)
         }
     }
+    //Incrementa o ID anterior +1
     getProximoId() {
         let proximoId = localStorage.getItem('id')
         return parseInt(proximoId) + 1
@@ -28,10 +39,11 @@ class Bd {
     gravar(despesaNova) {
 
         let id = this.getProximoId()
-        //Converte obj literal passado no parâmetro em JSON
 
+        //Converte obj literal passado no parâmetro em JSON
         localStorage.setItem(id, JSON.stringify(despesaNova))
-        
+
+        //Seta o id novo para ser incrementado caso passem um novo registro
         localStorage.setItem('id', id)
     }
 }
@@ -55,6 +67,14 @@ function cadastrarDespesa(params) {
         descricao.value,
         valor.value
     );
-    bd.gravar(despesa)
+
+    if (despesa.validarDados()) {
+        //Dialog de sucesso
+        console.log('Dados válidos')
+        //bd.gravar(despesa)
+    } else {
+        //Dialog de erro
+        console.log('Dados inválidos')
+    }
 }
 /* -------------------------- SELECIONA OS VALORES -------------------------- */
