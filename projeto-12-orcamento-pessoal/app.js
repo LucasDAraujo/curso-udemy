@@ -46,11 +46,34 @@ class Bd {
         //Seta o id novo para ser incrementado caso passem um novo registro
         localStorage.setItem('id', id)
     }
+
+    recuperarTodosOsRegistros() {
+        let listaDespesas = []
+
+        let id = localStorage.getItem('id')
+
+        //Recuperar todas as despesas cadastradas em local storage
+        for (let i = 1; i <= id; i++) {
+            //Recuperar a despesa
+            const despesa = JSON.parse(localStorage.getItem(i))
+
+            //Se existem índices que foram removidos, então, pule os índices
+
+            if (despesa === null) {
+                continue
+            }
+            listaDespesas.push(despesa)
+
+        }
+
+        return listaDespesas
+    }
+
 }
 let bd = new Bd()
 /* -------------------------- CRIA A CLASSES ------------------------- */
 
-/* -------------------------- SELECIONA OS VALORES -------------------------- */
+/* -------------------------- REALIZA O CADASTRO DE ELEMENTOS E VERIFICA OS CAMPOS -------------------------- */
 function cadastrarDespesa(params) {
     let ano = document.getElementById("ano");
     let mes = document.getElementById("mes");
@@ -80,6 +103,7 @@ function cadastrarDespesa(params) {
 
         document.getElementById('btn-Modal').classList.remove('btn-danger')
         document.getElementById('btn-Modal').classList.add('btn-success')
+
         $('#registraDespesa').modal('show')
     } else {
         //Dialog de erro
@@ -96,4 +120,12 @@ function cadastrarDespesa(params) {
         $('#registraDespesa').modal('show')
     }
 }
-/* -------------------------- SELECIONA OS VALORES -------------------------- */
+/* -------------------------- REALIZA O CADASTRO DE ELEMENTOS E VERIFICA OS CAMPOS -------------------------- */
+
+
+/* ---------------------- CARREGAR A LISTA DE DESPESAS ---------------------- */
+function carregaListaDespesas() {
+    let despesasRecuperadas = bd.recuperarTodosOsRegistros()
+    
+}
+/* ---------------------- CARREGAR A LISTA DE DESPESAS ---------------------- */
