@@ -134,36 +134,19 @@ function cadastrarDespesa(params) {
         descricao.value,
         valor.value
     );
-    //Se os dados forem válidos, gravar despesa e eexibir mensagem, senão, não gravar e exibir msg de erro
+
+    //ANCHOR chamar o modal
+
+    //Se os dados forem válidos, gravar despesa e exibir mensagem, senão, não gravar e exibir msg de erro
     if (despesa.validarDados()) {
         //Dialog de sucesso
         bd.gravar(despesa)
-        document.getElementById('modal-header').classList.remove('text-danger')
-        document.getElementById('modal-header').classList.add('text-success')
 
-        document.getElementById('modal-title').innerHTML = 'Registro inserido com sucesso!'
-
-        document.getElementById('modal-body').innerHTML = 'Sua nova despesa foi computada corretamente!'
-
-        document.getElementById('btn-Modal').classList.remove('btn-danger')
-        document.getElementById('btn-Modal').classList.add('btn-success')
-
+        carregarModal(true, 'Registro inserido com sucesso!', 'Sua nova despesa foi computada corretamente!')
         limpaCampos()
-
-        $('#registraDespesa').modal('show')
     } else {
         //Dialog de erro
-        document.getElementById('modal-header').classList.remove('text-success')
-        document.getElementById('modal-header').classList.add('text-danger')
-
-        document.getElementById('modal-title').innerHTML = 'Registro inválido!'
-
-        document.getElementById('modal-body').innerHTML = 'Existem campos não preenchidos no formulário!'
-
-        document.getElementById('btn-Modal').classList.remove('btn-success')
-        document.getElementById('btn-Modal').classList.add('btn-danger')
-
-        $('#registraDespesa').modal('show')
+        carregarModal(false, 'Houve um erro na inserção do registro!', 'Existem elementos não preenchidos nos campos')
     }
 }
 
@@ -225,7 +208,7 @@ function carregaListaDespesas(despesasParametro = Array(), filtro = false) {
 
         linhaTabela.insertCell(3).innerHTML = `R$${despesa.valor}`
 
-        //Cria botão de exclusão
+        //ANCHOR Cria botão de exclusão
         let btn = document.createElement("button")
 
         btn.classList.add('btn', 'btn-danger')
@@ -240,7 +223,7 @@ function carregaListaDespesas(despesasParametro = Array(), filtro = false) {
 
             bd.remover(id) //remover a despesa
 
-            window.location.reload() //Atualiza a página
+            carregarModal(true, 'Remoção concluída!', 'Seu registro foi removido com sucesso', true)
         }
 
         linhaTabela.insertCell(4).append(btn)
@@ -277,3 +260,40 @@ function pesquisarDespesa() {
 
 }
 /*  --------------------------- PESQUISAR DESPESAS --------------------------- */
+
+
+/* ---------------------------- CARREGAR O MODAL ---------------------------- */
+//ANCHOR FUNÇÃO DO MODAL
+function carregarModal(sucesso = false, tituloModal = '', corpoModal = '', reload = false) {
+    if (sucesso) {
+        document.getElementById('modal-header').classList.remove('text-danger')
+        document.getElementById('modal-header').classList.add('text-success')
+
+        document.getElementById('modal-title').innerHTML = tituloModal
+
+        document.getElementById('modal-body').innerHTML = corpoModal
+
+        document.getElementById('btn-Modal').classList.remove('btn-danger')
+        document.getElementById('btn-Modal').classList.add('btn-success')
+
+    } else {
+        document.getElementById('modal-header').classList.remove('text-success')
+        document.getElementById('modal-header').classList.add('text-danger')
+
+        document.getElementById('modal-title').innerHTML = tituloModal
+
+        document.getElementById('modal-body').innerHTML = corpoModal
+
+        document.getElementById('btn-Modal').classList.remove('btn-success')
+        document.getElementById('btn-Modal').classList.add('btn-danger')
+
+    }
+
+    $('#registraDespesa').modal('show')
+    if (reload) { //Atualiza a página
+        document.getElementById('btn-Modal').onclick = function () {
+            window.location.reload()
+        }
+    }
+}
+/* ---------------------------- CARREGAR O MODAL ---------------------------- */
