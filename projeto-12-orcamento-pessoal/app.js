@@ -62,6 +62,7 @@ class Bd {
             if (despesa === null) {
                 continue
             }
+            despesa.id = i
             listaDespesas.push(despesa)
 
         }
@@ -105,6 +106,11 @@ class Bd {
         }
         limpaCampos()
         return despesasFiltradas
+    }
+
+
+    remover(id) {
+        localStorage.removeItem(id)
     }
 
 }
@@ -218,7 +224,32 @@ function carregaListaDespesas(despesasParametro = Array(), filtro = false) {
         linhaTabela.insertCell(2).innerHTML = despesa.descricao
 
         linhaTabela.insertCell(3).innerHTML = `R$${despesa.valor}`
+
+        //Cria botão de exclusão
+        let btn = document.createElement("button")
+
+        btn.classList.add('btn', 'btn-danger')
+
+        btn.innerHTML = '<i class="fas fa-times"> </i>'
+
+        btn.id = `id-despesa-${despesa.id}` //Cria o atributo id no botão e associa ao da despesa
+
+        btn.onclick = function () {
+
+            let id = this.id.replace('id-despesa-', '')
+
+            bd.remover(id) //remover a despesa
+
+            window.location.reload() //Atualiza a página
+        }
+
+        linhaTabela.insertCell(4).append(btn)
+        //Cria botão de exclusão
+
+        console.log(despesa)
     });
+
+
 }
 
 /* ---------------------- CARREGAR A LISTA DE DESPESAS ---------------------- */
