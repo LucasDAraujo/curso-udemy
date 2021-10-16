@@ -69,8 +69,42 @@ class Bd {
         return listaDespesas
     }
 
-    pesquisar(despesa){
-         
+    pesquisar(despesaPesquisada) {
+        let despesasFiltradas = []
+
+        despesasFiltradas = this.recuperarTodosOsRegistros()
+
+        //Filtro de ano
+        if (despesaPesquisada.ano != '') {
+            despesasFiltradas = despesasFiltradas.filter(valorIndice => valorIndice.ano == despesaPesquisada.ano)
+        }
+
+        //filtro de mês
+        if (despesaPesquisada.mes != '') {
+            despesasFiltradas = despesasFiltradas.filter(valorIndice => valorIndice.mes == despesaPesquisada.mes)
+        }
+
+        //Filtro de dia
+        if (despesaPesquisada.dia != '') {
+            despesasFiltradas = despesasFiltradas.filter(valorIndice => valorIndice.dia == despesaPesquisada.dia)
+        }
+
+        //Filtro de tipo
+        if (despesaPesquisada.tipo != '') {
+            despesasFiltradas = despesasFiltradas.filter(valorIndice => valorIndice.tipo == despesaPesquisada.tipo)
+        }
+
+        //Filtro de descrição
+        if (despesaPesquisada.descricao != '') {
+            despesasFiltradas = despesasFiltradas.filter(valorIndice => valorIndice.descricao == despesaPesquisada.descricao)
+        }
+
+        //Filtro de valor
+        if (despesaPesquisada.valor != '') {
+            despesasFiltradas = despesasFiltradas.filter(valorIndice => valorIndice.valor == despesaPesquisada.valor)
+        }
+
+        limpaCampos()
     }
 
 }
@@ -108,13 +142,7 @@ function cadastrarDespesa(params) {
         document.getElementById('btn-Modal').classList.remove('btn-danger')
         document.getElementById('btn-Modal').classList.add('btn-success')
 
-        //Limpa os campos após tudo ser gravado
-        ano.value = ''
-        mes.value = ''
-        dia.value = ''
-        tipo.value = ''
-        descricao.value = ''
-        valor.value = ''
+        limpaCampos()
 
         $('#registraDespesa').modal('show')
     } else {
@@ -133,7 +161,15 @@ function cadastrarDespesa(params) {
     }
 }
 
-
+function limpaCampos() {
+    //Limpa os campos após tudo ser gravado
+    ano.value = ''
+    mes.value = ''
+    dia.value = ''
+    tipo.value = ''
+    descricao.value = ''
+    valor.value = ''
+}
 /* -------------------------- REALIZA O CADASTRO DE ELEMENTOS E VERIFICA OS CAMPOS -------------------------- */
 
 
