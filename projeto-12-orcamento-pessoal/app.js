@@ -103,8 +103,8 @@ class Bd {
         if (despesaPesquisada.valor != '') {
             despesasFiltradas = despesasFiltradas.filter(valorIndice => valorIndice.valor == despesaPesquisada.valor)
         }
-
         limpaCampos()
+        return despesasFiltradas
     }
 
 }
@@ -234,6 +234,43 @@ function pesquisarDespesa() {
         valor = document.getElementById("valor").value
 
     let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
-    bd.pesquisar(despesa)
+
+    let despesaFiltrada = bd.pesquisar(despesa)
+    console.log(despesaFiltrada)
+
+    ///percorrer o array despesas listando cada despesa de forma dinâmica
+    despesaFiltrada.forEach(despesa => {
+        let TableBody = document.getElementById("listaDespesas")
+        //criando a linha da tabela(tr)
+        let linhaTabela = TableBody.insertRow()
+
+        // Criar  as colunas(td)
+        linhaTabela.insertCell(0).innerHTML = `${despesa.dia}/${despesa.mes}/${despesa.ano}`
+
+        //Ajustar o tipo
+        switch (despesa.tipo) {
+            case '1':
+                despesa.tipo = 'Alimentação'
+                break
+            case "2":
+                despesa.tipo = "Educação"
+                break
+            case "3":
+                despesa.tipo = 'Lazer'
+                break
+            case "4":
+                despesa.tipo = "Saúde"
+                break
+            case "5":
+                despesa.tipo = "Transporte"
+                break
+
+        }
+        linhaTabela.insertCell(1).innerHTML = despesa.tipo
+
+        linhaTabela.insertCell(2).innerHTML = despesa.descricao
+        linhaTabela.insertCell(3).innerHTML = `R$${despesa.valor}`
+    });
+
 }
 /*  --------------------------- PESQUISAR DESPESAS --------------------------- */
